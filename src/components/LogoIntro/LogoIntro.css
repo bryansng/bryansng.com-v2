@@ -1,0 +1,40 @@
+.anim-stage {
+	perspective: 200px;
+}
+
+.anim-object {
+	transform: translate3d(0,0,0);
+}
+
+/* For entrance */
+@keyframes blur-in-bck-center {
+  0% {
+    filter: blur(3rem) brightness(50%);
+    transform: translateZ(-60rem);
+    opacity: 0;
+  }
+  100% {
+    filter: none;
+    transform: translateZ(-40rem);
+    opacity: 1;
+  }
+}
+.blur-in-bck-center {
+	animation: blur-in-bck-center 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+}
+
+
+/* For exit */
+@keyframes slide-out-bck-center {
+  0% {
+    transform: translateZ(-40rem);
+    opacity: 1;
+  }
+  100% {
+    transform: translateZ(-200rem);
+    opacity: 0;
+  }
+}
+.slide-out-bck-center {
+	animation: slide-out-bck-center 0.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s both;
+}

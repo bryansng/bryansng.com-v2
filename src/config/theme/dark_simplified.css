@@ -1,0 +1,206 @@
+/* Needed if not during blurry background, there is a white edge border thing. */
+body {
+	background-color: #111;
+}
+.entire-page-bg {
+	background-color: #1E1E1E;
+	color: #D4D4D4;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+	background: #1E1E1E;
+	border-color: rgb(112, 112, 112, 0.5);
+	border-width: 1px;
+	border-style: solid;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: rgb(112, 112, 112, 0.5);
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: rgb(112, 112, 112, 0.9);
+}
+
+
+
+::selection {
+	background: #999;
+}
+
+
+/* TDL include shadow for nav */
+.nav-bg {
+	background-color: #252526;
+}
+.nav-text-number {
+	color: #C586C0;
+}
+.nav-text-dot {
+	color: #D4D4D4;
+}
+.nav-text {
+	color: #9CDCFE;
+}
+
+
+
+
+.greet {
+	color: #16825D;
+}
+.title {
+	color: #FFF;
+}
+.desc {
+	color: #BBB;
+}
+.paragraph {
+	color: #AAA;
+}
+
+
+
+
+.btn-bg {
+	background-color: transparent;
+}
+.btn-bg:hover {
+	background-color: #CCCCCC;
+}
+.btn-border {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #CCCCCC;
+}
+.btn-text {
+	color: #CCCCCC;
+}
+.btn-text:hover {
+	color: #252526;
+}
+.btn-transition {
+	background-color: transparent;
+	transition-property: all;
+	transition-timing-function: ease-in-out;
+	transition-duration: 0.2s;
+	transition-delay: 0s;
+}
+
+
+
+
+
+.active-about {
+	border-color: #9CDCFE;
+	color: #9CDCFE;
+}
+.not-active-about {
+	border-color: #555;
+	color: #555;
+}
+.not-active-about:hover {
+	background-color: #252526;
+	color: #9CDCFE;
+}
+
+
+
+
+
+.topic {
+	color: #ce9178;
+}
+.repo-card-img-bg {
+	background-color: #303030;
+}
+.repo-card-080 {
+	background-color: rgb(64, 64, 64, 0.8);
+}
+.repo-card {
+	background-color: #404040;
+}
+@media screen and (min-width: 48em) {
+	.repo-card-ns {
+		background-color: rgb(64, 64, 64, 0.8);
+	}
+}
+@media screen and (min-width: 48em) and (max-width: 64em) {
+	.repo-card-m {
+		background-color: rgb(64, 64, 64, 0.8);
+	}
+}
+@media screen and (min-width: 64em) {
+	.repo-card-l {
+		background-color: #404040;
+	}
+}
+
+
+
+
+
+.employment-symbol {
+	color: #007ACC;
+}
+.employment-company {
+	color: #9CDCFE;
+}
+
+.active-employment {
+	border-color: #9CDCFE;
+	color: #9CDCFE;
+}
+.not-active-employment {
+	border-color: #555;
+	color: #555;
+}
+.not-active-employment:hover {
+	background-color: #252526;
+	color: #9CDCFE;
+}
+
+.better-list-style {
+	position: relative;
+}
+.better-list-style::before {
+	content: "⊳";
+	position: absolute;
+	color: #9CDCFE;
+	left: 0px;
+}
+
+
+
+.logo-circle {
+	color: #606060;
+	fill: currentColor;
+}
+.logo-path {
+	color: #CCC;
+	fill: currentColor;
+}
+.logo svg:hover .logo-circle {
+	color: #CCC;
+}
+.logo svg:hover .logo-path {
+	color: #606060;
+}
+
+
+.footer-bg {
+	background-color: #252526;
+}
+.footer {
+	color: #666;
+}
+.footer:hover {
+	color: #C586C0;
+}

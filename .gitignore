@@ -1,5 +1,11 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# images in assets
+src/assets/logo/chinese-ink-logo-v1/
+src/assets/logo/chinese-ink-logo-v2/
+src/assets/logo/more-western-logo/
+src/assets/logo/old-personal-website-logo/
+
 # dependencies
 /node_modules
 /.pnp

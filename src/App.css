@@ -1,33 +1,304 @@
-.App {
-  text-align: center;
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow: auto;
+  margin: 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+a > div {
+  vertical-align: bottom;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cursor-default {
+  cursor: default;
 }
 
-.App-link {
-  color: #61dafb;
+
+/* DO NOT CHANGE THIS.
+If you must, the below is used as default animationDelay in Segment.js (as of writing, used only for the Segments, logo and the burger-menu. Both of which required special delays at the time of writing).
+
+If you want to use for transitions, try adding transition-delay for all of them (This might work).
+*/
+.delay-020 {
+  animation-delay: 0.2s;
+}
+.delay-025 {
+  animation-delay: 0.25s;
+}
+.delay-050 {
+  animation-delay: 0.5s;
+}
+.delay-075 {
+  animation-delay: 0.75s;
+}
+.delay-100 {
+  animation-delay: 1s;
+}
+.delay-125 {
+  animation-delay: 1.25s;
+}
+.delay-150 {
+  animation-delay: 1.5s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.duration-020 {
+  animation-duration: 0.2s;
+}
+.duration-025 {
+  animation-duration: 0.25s;
+}
+.duration-050 {
+  animation-duration: 0.5s;
+}
+.duration-075 {
+  animation-duration: 0.75s;
+}
+.duration-100 {
+  animation-duration: 1s;
+}
+.duration-125 {
+  animation-duration: 1.25s;
+}
+.duration-150 {
+  animation-duration: 1.5s;
+}
+
+.slide-in-bottom {
+  animation-name: slide-in-bottom;
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  animation-fill-mode: both;
+}
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
+}
+
+
+
+
+
+.animation-ease-in {
+  animation-name: animation-ease-in;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@keyframes animation-ease-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+.animation-paused {
+	animation-play-state: paused;
+}
+.animation-running {
+	animation-play-state: running;
+}
+
+
+
+/* used by footer */
+.transition-ease-in {
+  transition: all 0.2s;
+}
+.transition-ease-in-05 {
+  transition: all 0.5s;
+}
+.transition-ease-in-10 {
+  transition: all 10s;
+}
+.hide {
+  visibility: hidden;
+}
+
+
+.transition-hide-partial {
+  filter: brightness(85%);
+}
+.transition-hide-partial:hover {
+  filter: brightness(100%);
+}
+
+
+
+.transition-underline {
+  position: relative;
+}
+.transition-underline::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+	background-color: #D4D4D4;
+  background-color: #DCDCAA;
+  transform-origin: bottom right;
+  transform: scaleX(0);
+  transition: transform 0.2s ease;
+}
+.transition-underline:hover::before {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+
+
+
+
+.dim-080:hover {
+  opacity: 0.8;
+}
+.dim-090:hover {
+  opacity: 0.9;
+}
+
+
+
+
+.picture {
+  display: inline-block;
+  position: relative;
+}
+.picture-frame {
+  z-index: 9999;
+  background-color: #C586C0;
+
+  transition: background-color 0.2s;
+}
+.picture-frame:hover {
+	background-color: #C586C0;
+}
+
+.picture-shadow {
+  z-index: -1;
+
+  content: "";
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  border-color: #C586C0;
+  border-style: solid;
+  border-width: 3px;
+  transform: translate(15px, 15px);
+}
+.picture-frame:hover + .picture-shadow {
+  transform: translate(10px, 10px);
+}
+
+.me-picture {
+  opacity: 0.5;
+  filter: brightness(110%) contrast(105%) sepia(20%)hue-rotate(-30deg);
+
+  transition: filter 0.2s;
+}
+.me-picture:hover {
+  opacity: 1;
+  filter: brightness(110%) contrast(105%) sepia(20%);
+}
+
+
+
+
+
+
+
+
+
+
+
+.font-ubuntu-mono {
+  font-family: 'Ubuntu Mono', monospace;
+	font-weight: normal;
+}
+.font-ubuntu-mono-bold {
+  font-family: 'Ubuntu Mono', monospace;
+	font-weight: bold;
+}
+
+.font-opensans {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+}
+.font-opensans-bold {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+.font-montserrat-bold {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+/*
+font-family: 'Inconsolata', monospace;
+font-family: 'Ubuntu Mono', monospace;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Long Cang', cursive;
+font-family: 'Liu Jian Mao Cao', cursive;
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans|Ubuntu:400,700|Ubuntu+Mono|Liu+Jian+Mao+Cao|Long+Cang&display=swap');
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 48em) {
+  .o-0-ns { opacity: 0; }
+  .o-100-ns { opacity: 100; }
+  .hide-child-ns .child-ns { opacity: 0; }
+  .hide-child-ns:hover .child-ns,
+  .hide-child-ns:focus .child-ns,
+  .hide-child-ns:active .child-ns { opacity: 1; }
+}
+
+@media screen and (min-width: 48em) and (max-width: 64em) {
+  .o-0-m { opacity: 0; }
+  .o-100-m { opacity: 100; }
+  .hide-child-m .child-m { opacity: 0; }
+  .hide-child-m:hover .child-m,
+  .hide-child-m:focus .child-m,
+  .hide-child-m:active .child-m { opacity: 1; }
+}
+
+@media screen and (min-width: 64em) {
+  .o-0-l { opacity: 0; }
+  .o-100-l { opacity: 100; }
+  .hide-child-l .child-l { opacity: 0; }
+  .hide-child-l:hover .child-l,
+  .hide-child-l:focus .child-l,
+  .hide-child-l:active .child-l { opacity: 1; }
 }
