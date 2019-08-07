@@ -96,7 +96,8 @@
 		"section_name": "Projects",
 		"github_username": "bryansng",
 		"capitalizables": ["html", "css", "api", "sql", "fx", "js"],
-		"domains": [".io", ".com"]
+		"domains": [".io", ".com"],
+		"token": "6bd57035b0d7b8ca630afd2d9d5bb8202a0e7471"
 	},
 
 	"works": {
