@@ -13,7 +13,7 @@ class Projects extends React.Component {
 			<div id="projects">
 				<Segment>
 					<div className="tc">
-						<div className="pa3">
+						<div className="pv3">
 							<TabContent index={componentOrder} content={section_name} isLink={false} />
 						</div>
 						<GitHubPinnedRepos />

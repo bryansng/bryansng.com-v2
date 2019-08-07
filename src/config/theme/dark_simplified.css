@@ -180,18 +180,18 @@ body {
 
 
 .logo-circle {
-	color: #606060;
+	color: #505050;
 	fill: currentColor;
 }
 .logo-path {
-	color: #CCC;
+	color: #FFF;
 	fill: currentColor;
 }
 .logo svg:hover .logo-circle {
-	color: #CCC;
+	color: #FFF;
 }
 .logo svg:hover .logo-path {
-	color: #606060;
+	color: #505050;
 }
 
 

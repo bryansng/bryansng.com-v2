@@ -11,8 +11,7 @@ const Logo = ({ logoObj, urlToUse = "" }) => {
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox={logoObj
 			.view_box}>
 					<circle className="logo-circle transition-ease-in" cx="100" cy="100" r="80"></circle>
-					{logoObj
-				.paths.map((path, ind) => (
+					{logoObj.paths.map((path, ind) => (
 						<path key={ind} className="logo-path transition-ease-in" d={path}></path>
 					))}
 				</svg>

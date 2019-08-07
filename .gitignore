@@ -6,6 +6,9 @@ src/assets/logo/chinese-ink-logo-v2/
 src/assets/logo/more-western-logo/
 src/assets/logo/old-personal-website-logo/
 
+# ignore netlify directory
+.netlify
+
 # dependencies
 /node_modules
 /.pnp

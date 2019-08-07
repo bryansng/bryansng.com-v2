@@ -7,7 +7,7 @@ import Navigation from './components/Navigation/Navigation';
 import Intro from './components/Intro';
 import About from './components/About';
 import Projects from './components/Projects';
-import Works from './components/Works/Works';
+import Works from './components/Works';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -83,7 +83,8 @@ class App extends React.Component {
     document.body.classList.remove("overflow-hidden") :
     document.body.classList.add("overflow-hidden")
     return (
-      isLogoAnimationOver ?
+      isLogoAnimationOver
+      ?
       <div>
         <Navigation scrollDirection={direction} />
         <div className="entire-page-bg font-opensans page-root transition-ease-in">
@@ -92,7 +93,8 @@ class App extends React.Component {
           </div>
           <Footer />
         </div>
-      </div> :
+      </div>
+      :
       <LogoIntro showContent={this.showContent} />
     );
   }

@@ -1,8 +1,8 @@
 import React from 'react';
-import Segment from '../Segment';
-import content from '../../config/content';
-import { TabContent } from '../Navigation/Navigation';
-import { TransitionComponent } from '../About';
+import Segment from './Segment';
+import content from '../config/content';
+import { TabContent } from './Navigation/Navigation';
+import { TransitionComponent } from './About';
 
 class Works extends React.Component {
 	constructor() {
@@ -27,7 +27,7 @@ class Works extends React.Component {
 			<div id="works">
 				<Segment>
 					<div className="w-70-l center">
-						<div className="pa3">
+						<div className="pv3">
 							<TabContent index={componentOrder} content={section_name} isLink={false} />
 						</div>
 						<div className="flex flex-row-l flex-column flex-nowrap justify-between tl">

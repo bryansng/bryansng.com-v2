@@ -13,10 +13,10 @@ class Contact extends React.Component {
 		return (
 			<div id="contact">
 				<Segment>
-					<div className="w-70-l w-90-m center tc slide-in-bottom">
+					<div className="w-70-l w-90 center tc slide-in-bottom">
 						<TabContent index={componentOrder} content="Contact" isLink={false} />
 						<h2 className="f2 title">{title}</h2>
-						<p className="pb4 paragraph">{desc}</p>
+						<p className="pb4 paragraph lh-copy">{desc}</p>
 						<MailTo isCenter={true} text={button_msg} />
 					</div>
 				</Segment>

@@ -3,13 +3,15 @@
 		"section_name": "Introduction",
 		"hi": "你好, my name is",
 		"name": "Bryan Sng.",
-		"short_desc": "I employ Breadth-First Learn for Computer Science.",
-		"alternate_desc": "I am still learning",
-		"desc": "I'm a Computer Science student based in Dublin, Ireland studying as much as I can from the field. At the moment, specializing in building websites and applications.",
+		"short_desc": "I build websites and things.",
+		"desc": "I'm a Software Engineer based in Dublin, Ireland. Currently studying as much as I can from the field. At the moment, I specialize in building exceptional websites and web applications.",
 		"button_msg": "Get in Touch"
 	},
 
 	"navigation": {
+		"logo": {
+			"url": "#intro"
+		},
 		"tabs": [
 			{
 				"name": "About",
@@ -33,7 +35,7 @@
 	"about": {
 		"section_name": "About me",
 		"descs": [
-			"Computer Science student at UCD, on a journey to learn all the nooks and crannies of Computer Science. Completed courses from Udemy on Full-Stack Web Development, Linux Administration, Machine Learning and Python.",
+			"I'm a Computer Science student at UCD, on a journey to learn all the nooks and crannies of Computer Science. Completed courses from Udemy on Full-Stack Web Development, Linux Administration, Machine Learning and Python.",
 			"Former Assistant Manager at a fast food restaurant. Former Founder of a game server."
 		],
 		"tech_desc": "Technologies that I've been working with recently:",
@@ -50,6 +52,7 @@
 					"Redis",
 					"Firebase",
 					"Progressive Web Apps (PWAs)",
+					"GraphQL",
 					"RESTful APIs",
 					"Jest",
 					"Webpack2"

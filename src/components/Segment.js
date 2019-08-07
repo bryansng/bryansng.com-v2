@@ -14,17 +14,17 @@ https://gist.github.com/koistya/934a4e452b61017ad611
 class Segment extends React.Component {
 	constructor(props) {
 		super(props);
-		this.selector = React.createRef();
-
-		const { isSegmentInViewport=false, isFullScreen=false, isForNavigation=false, isCard=false, imgURL="", isAnimationSlideIn=true, animationDelay="delay-020" } = props;
+		this.segment = React.createRef();
+		const { isSegmentInViewport, isFullScreen=false, isForNavigation=false, isCard=false, imgURL="", isAnimationSlideIn=true, animationDelay="delay-020", noPadding=false } = props;
 		this.state = {
-			isSegmentInViewport: isSegmentInViewport,
-			isFullScreen: isFullScreen,
-			isForNavigation: isForNavigation,
-			isCard: isCard,
-			imgURL: imgURL,
-			isAnimationSlideIn: isAnimationSlideIn,
-			animationDelay: animationDelay
+			isSegmentInViewport,
+			isFullScreen,
+			isForNavigation,
+			isCard,
+			imgURL,
+			isAnimationSlideIn,
+			animationDelay,
+			noPadding
 		}
 	}
 
@@ -35,7 +35,7 @@ class Segment extends React.Component {
    * @returns {boolean}
    */
 	isScrolledIntoView = () => {
-    var rect = this.selector.current.getBoundingClientRect();
+    var rect = this.segment.current.getBoundingClientRect();
     var elemTop = rect.top;
     var elemBottom = rect.bottom;
 
@@ -43,7 +43,7 @@ class Segment extends React.Component {
 		//const isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
 		
 		// Partially visible elements by a certain percentage, return true:
-		const percentage = this.state.isCard ? 0.1 : 0.5;
+		const percentage = this.props.isCard ? 0.1 : 0.4;
 		const isVisible = (elemTop + (window.innerHeight * percentage)) < window.innerHeight && elemBottom >= 0;
     return isVisible;
 	}
@@ -66,7 +66,7 @@ class Segment extends React.Component {
 	}
 	
 	render() {
-		const { isSegmentInViewport, isFullScreen, isForNavigation, isCard, imgURL, isAnimationSlideIn, animationDelay } = this.state;
+		const { isSegmentInViewport, isFullScreen, isForNavigation, isCard, imgURL, isAnimationSlideIn, animationDelay, noPadding } = this.state;
 
 		let defaultClasses = "";
 
@@ -77,14 +77,15 @@ class Segment extends React.Component {
 		}
 
 		if (!isCard && !isForNavigation) {
-			defaultClasses += ` v-mid ph3 ph4-l w-90-l w-90-m w-100 center`;
-			defaultClasses += ` ${isFullScreen ? "vh-100" : "pv7"}`;
+			defaultClasses += ` v-mid w-90-l w-90-m w-100 center`;
+			defaultClasses += ` ${isFullScreen ? "vh-100" : ""}`;
+			defaultClasses += ` ${noPadding ? "" : "pv7 ph3 ph4-l"}`;
 		}
 		defaultClasses += ` ${isSegmentInViewport ? "animation-running" : "animation-paused"}`;
 		
 		return (
 			<div
-				ref={this.selector}
+				ref={this.segment}
 				onScroll={this.handleScroll}
 				className={defaultClasses}>
 					{imgURL

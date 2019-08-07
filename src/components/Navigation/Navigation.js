@@ -63,17 +63,9 @@ class Navigation extends Component {
 		}
 	}
 
-	/* To maintain smooth transition of the sidebar from show to hide. After hiding, we change the height back to auto */
-	handleTransitionEnd = () => {
-		if (this.linksContainer.current.classList.contains("hide-sidebar")) {
-			this.linksContainer.current.classList.toggle("vh-100");
-			this.linksContainer.current.classList.toggle("w-50");
-		}
-	}
-
 	render() {
 		const { scrollDirection } = this.props;
-		const { tabs } = content.navigation;
+		const { logo, tabs } = content.navigation;
 		return (
 			<div
 				className={`w-100 z-1 fixed nav-transition-top ${this.handleScroll(scrollDirection)}`}>
@@ -81,7 +73,7 @@ class Navigation extends Component {
 					<div className="w-100 pv2 ph4 absolute shadow-3 nav-bg top-0 left-0">
 						<div className="flex flex-row flex-nowrap justify-between items-center">
 							<Segment isSegmentInViewport={true} isForNavigation={true} isAnimationSlideIn={false} animationDelay="delay-125">
-								<a href="#intro" className="link dib no-underline dim-090 transition-ease-in">
+								<a href={logo.url} className="link dib no-underline dim-090 transition-ease-in">
 									<img src={imgBS} className="v-btm" style={{width: "3rem"}} alt="Logo" />
 								</a>
 							</Segment>
@@ -94,7 +86,7 @@ class Navigation extends Component {
 								</div>
 							</Segment>
 
-							<div ref={this.linksContainer} className="flex flex-row-l flex-column flex-nowrap transition-ease-in-05 static-l absolute hide-sidebar h-auto-l vh-100 w-auto-l w-50 z-5" onTransitionEnd={this.handleTransitionEnd}>
+							<div ref={this.linksContainer} className="flex flex-row-l flex-column flex-nowrap transition-ease-in-05 static-l absolute hide-sidebar h-auto-l vh-100 w-auto-l w-50 z-5">
 								{tabs.map((tabObj, ind) =>
 									<NavigationTab
 										key={ind}
