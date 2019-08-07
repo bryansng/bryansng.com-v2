@@ -2,7 +2,7 @@
   "name": "bryansng.com",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bryansng.github.io/bryansng.com",
+  "homepage": "https://bryansng.github.io",
   "dependencies": {
     "apollo-boost": "^0.4.3",
     "apollo-cache-inmemory": "^1.6.2",
