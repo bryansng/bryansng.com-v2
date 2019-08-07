@@ -97,7 +97,414 @@
 		"github_username": "bryansng",
 		"capitalizables": ["html", "css", "api", "sql", "fx", "js"],
 		"domains": [".io", ".com"],
-		"token": "6bd57035b0d7b8ca630afd2d9d5bb8202a0e7471"
+		"graph_ql_data": {
+			"data": {
+				"user": {
+					"pinnedItems": {
+						"totalCount": 6,
+						"edges": [
+							{
+								"node": {
+									"resourcePath": "/bryansng/potato-face-detector",
+									"folder": {
+										"entries": [
+											{
+												"oid": "b495c90c9918b20a37cdbdfc2957bcbce6108de9",
+												"object": {},
+												"name": "img"
+											}
+										]
+									},
+									"name": "potato-face-detector",
+									"createdAt": "2019-06-09T14:06:27Z",
+									"updatedAt": "2019-08-05T15:54:19Z",
+									"description": "Face detector written by potatoes, for potatoes, on a potato.",
+									"shortDescriptionHTML": "Face de…",
+									"homepageUrl": "https://bryansng.github.io/potato-face-detector/",
+									"url": "https://github.com/bryansng/potato-face-detector",
+									"repositoryTopics": {
+										"edges": [
+											{
+												"node": {
+													"topic": {
+														"name": "react"
+													}
+												}
+											},
+											{
+												"node": {
+													"topic": {
+														"name": "node-js"
+													}
+												}
+											},
+											{
+												"node": {
+													"topic": {
+														"name": "postgresql"
+													}
+												}
+											},
+											{
+												"node": {
+													"topic": {
+														"name": "redis"
+													}
+												}
+											},
+											{
+												"node": {
+													"topic": {
+														"name": "clarifai-api"
+													}
+												}
+											},
+											{
+												"node": {
+													"topic": {
+														"name": "session-management"
+													}
+												}
+											}
+										]
+									},
+									"languages": {
+										"totalCount": 3,
+										"edges": [
+											{
+												"node": {
+													"name": "HTML",
+													"color": "#e34c26"
+												}
+											},
+											{
+												"node": {
+													"name": "CSS",
+													"color": "#563d7c"
+												}
+											},
+											{
+												"node": {
+													"name": "JavaScript",
+													"color": "#f1e05a"
+												}
+											}
+										]
+									}
+								}
+							},
+							{
+								"node": {
+									"resourcePath": "/bryansng/backgammon",
+									"folder": {
+										"entries": [
+											{
+												"oid": "882c5da0e2d8a2c7c9ba15df2c285337b08ab39b",
+												"object": {},
+												"name": "img"
+											}
+										]
+									},
+									"name": "backgammon",
+									"createdAt": "2019-01-27T17:03:30Z",
+									"updatedAt": "2019-08-05T16:14:43Z",
+									"description": "Backgammon the board game, a team-based software engineering project made from Jan-Apr 2019. Made by @bryansng, @LxEmily, and @Abuden in 5 sprints.",
+									"shortDescriptionHTML": "Backgam…",
+									"homepageUrl": "",
+									"url": "https://github.com/bryansng/backgammon",
+									"repositoryTopics": {
+										"edges": [
+											{
+												"node": {
+													"topic": {
+														"name": "java"
+													}
+												}
+											},
+											{
+												"node": {
+													"topic": {
+														"name": "javafx"
+													}
+												}
+											}
+										]
+									},
+									"languages": {
+										"totalCount": 1,
+										"edges": [
+											{
+												"node": {
+													"name": "Java",
+													"color": "#b07219"
+												}
+											}
+										]
+									}
+								}
+							},
+							{
+								"node": {
+									"resourcePath": "/bryansng/bryansng.github.io",
+									"folder": {
+										"entries": [
+											{
+												"oid": "a3dc4ad9030d166ca3763d1176c26de917678abb",
+												"object": {},
+												"name": "img"
+											}
+										]
+									},
+									"name": "bryansng.github.io",
+									"createdAt": "2018-07-24T13:14:26Z",
+									"updatedAt": "2019-08-05T14:47:45Z",
+									"description": "Deprecated Personal Website",
+									"shortDescriptionHTML": "Depreca…",
+									"homepageUrl": "https://bryansng.github.io/",
+									"url": "https://github.com/bryansng/bryansng.github.io",
+									"repositoryTopics": {
+										"edges": [
+											{
+												"node": {
+													"topic": {
+														"name": "firebase"
+													}
+												}
+											},
+											{
+												"node": {
+													"topic": {
+														"name": "js"
+													}
+												}
+											},
+											{
+												"node": {
+													"topic": {
+														"name": "html"
+													}
+												}
+											},
+											{
+												"node": {
+													"topic": {
+														"name": "css"
+													}
+												}
+											}
+										]
+									},
+									"languages": {
+										"totalCount": 3,
+										"edges": [
+											{
+												"node": {
+													"name": "HTML",
+													"color": "#e34c26"
+												}
+											},
+											{
+												"node": {
+													"name": "CSS",
+													"color": "#563d7c"
+												}
+											},
+											{
+												"node": {
+													"name": "JavaScript",
+													"color": "#f1e05a"
+												}
+											}
+										]
+									}
+								}
+							},
+							{
+								"node": {
+									"resourcePath": "/bryansng/the-social",
+									"folder": {
+										"entries": [
+											{
+												"oid": "9be8a3a005768db4d0030f2653a4561a04d8679d",
+												"object": {},
+												"name": "img"
+											}
+										]
+									},
+									"name": "the-social",
+									"createdAt": "2018-05-25T08:58:11Z",
+									"updatedAt": "2019-08-05T16:06:41Z",
+									"description": "Web Design Project 2018",
+									"shortDescriptionHTML": "Web Des…",
+									"homepageUrl": "https://bryansng.github.io/thesocial/",
+									"url": "https://github.com/bryansng/the-social",
+									"repositoryTopics": {
+										"edges": [
+											{
+												"node": {
+													"topic": {
+														"name": "google-maps-api"
+													}
+												}
+											},
+											{
+												"node": {
+													"topic": {
+														"name": "html"
+													}
+												}
+											},
+											{
+												"node": {
+													"topic": {
+														"name": "css"
+													}
+												}
+											},
+											{
+												"node": {
+													"topic": {
+														"name": "js"
+													}
+												}
+											}
+										]
+									},
+									"languages": {
+										"totalCount": 4,
+										"edges": [
+											{
+												"node": {
+													"name": "HTML",
+													"color": "#e34c26"
+												}
+											},
+											{
+												"node": {
+													"name": "CSS",
+													"color": "#563d7c"
+												}
+											},
+											{
+												"node": {
+													"name": "PHP",
+													"color": "#4F5D95"
+												}
+											},
+											{
+												"node": {
+													"name": "Hack",
+													"color": "#878787"
+												}
+											}
+										]
+									}
+								}
+							},
+							{
+								"node": {
+									"resourcePath": "/bryansng/reversi",
+									"folder": {
+										"entries": [
+											{
+												"oid": "95311313e72a307e64e8cd22609189f304d43e4c",
+												"object": {},
+												"name": "img"
+											}
+										]
+									},
+									"name": "reversi",
+									"createdAt": "2018-08-02T09:49:09Z",
+									"updatedAt": "2019-08-05T16:04:19Z",
+									"description": "A strategy board game for 2 players, played on an 8x8 uncheckered board.",
+									"shortDescriptionHTML": "A strat…",
+									"homepageUrl": "",
+									"url": "https://github.com/bryansng/reversi",
+									"repositoryTopics": {
+										"edges": [
+											{
+												"node": {
+													"topic": {
+														"name": "c"
+													}
+												}
+											}
+										]
+									},
+									"languages": {
+										"totalCount": 2,
+										"edges": [
+											{
+												"node": {
+													"name": "C",
+													"color": "#555555"
+												}
+											},
+											{
+												"node": {
+													"name": "C++",
+													"color": "#f34b7d"
+												}
+											}
+										]
+									}
+								}
+							},
+							{
+								"node": {
+									"resourcePath": "/bryansng/plain-planes",
+									"folder": {
+										"entries": [
+											{
+												"oid": "e028dab537ccdf298338f74d169ef5f495cdb0fc",
+												"object": {},
+												"name": "img"
+											}
+										]
+									},
+									"name": "plain-planes",
+									"createdAt": "2017-08-12T04:25:39Z",
+									"updatedAt": "2019-08-05T16:02:51Z",
+									"description": "Control an aircraft to shoot down other aircrafts.",
+									"shortDescriptionHTML": "Control…",
+									"homepageUrl": "",
+									"url": "https://github.com/bryansng/plain-planes",
+									"repositoryTopics": {
+										"edges": [
+											{
+												"node": {
+													"topic": {
+														"name": "python"
+													}
+												}
+											},
+											{
+												"node": {
+													"topic": {
+														"name": "pygame"
+													}
+												}
+											}
+										]
+									},
+									"languages": {
+										"totalCount": 1,
+										"edges": [
+											{
+												"node": {
+													"name": "Python",
+													"color": "#3572A5"
+												}
+											}
+										]
+									}
+								}
+							}
+						]
+					}
+				}
+			}
+		}
 	},
 
 	"works": {
