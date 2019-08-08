@@ -6,7 +6,7 @@ import LogoIntro from './components/LogoIntro/LogoIntro';
 import Navigation from './components/Navigation/Navigation';
 import Intro from './components/Intro';
 import About from './components/About';
-import Projects from './components/Projects';
+import Projects from './components/Projects/Projects';
 import Works from './components/Works';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -15,37 +15,12 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      direction: 'still',
       isLogoAnimationOver: false
     };
   }
 
-  handleScroll = (e) => {
-    const window = e.currentTarget;
-
-    if (this.prevScrollY > window.scrollY) {
-      this.setState({
-        direction: 'up',
-      });
-    } else if (this.prevScrollY < window.scrollY) {
-      this.setState({
-        direction: 'down',
-      });
-    }
-    this.prevScrollY = window.scrollY;
-  }
-
   showContent = () => {
     this.setState({ isLogoAnimationOver: true });
-  }
-
-  componentDidMount() {
-    this.prevScrollY = window.scrollY;
-    window.addEventListener("scroll", this.handleScroll);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll);
   }
 
   render() {
@@ -78,7 +53,7 @@ class App extends React.Component {
       )
     }
 
-    const { direction, isLogoAnimationOver } = this.state;
+    const { isLogoAnimationOver } = this.state;
     isLogoAnimationOver ?
     document.body.classList.remove("overflow-hidden") :
     document.body.classList.add("overflow-hidden")
@@ -86,7 +61,7 @@ class App extends React.Component {
       isLogoAnimationOver
       ?
       <div>
-        <Navigation scrollDirection={direction} />
+        <Navigation />
         <div className="entire-page-bg font-opensans page-root transition-ease-in">
           <div className="flex flex-column">
             {finalizedComponents}

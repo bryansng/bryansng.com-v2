@@ -14,11 +14,11 @@ https://gist.github.com/koistya/934a4e452b61017ad611
 class Segment extends React.Component {
 	constructor(props) {
 		super(props);
-		this.segment = React.createRef();
-		const { isSegmentInViewport, isFullScreen=false, isForNavigation=false, isCard=false, imgURL="", isAnimationSlideIn=true, animationDelay="delay-020", noPadding=false } = props;
+		const { isSegmentInViewport=false, isFullScreen=false, isForceFullScreen=false, isForNavigation=false, isCard=false, imgURL="", isAnimationSlideIn=true, animationDelay="delay-020", noPadding=false } = props;
 		this.state = {
 			isSegmentInViewport,
 			isFullScreen,
+			isForceFullScreen,
 			isForNavigation,
 			isCard,
 			imgURL,
@@ -26,6 +26,7 @@ class Segment extends React.Component {
 			animationDelay,
 			noPadding
 		}
+		this.segment = React.createRef();
 	}
 
   /*
@@ -43,7 +44,7 @@ class Segment extends React.Component {
 		//const isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
 		
 		// Partially visible elements by a certain percentage, return true:
-		const percentage = this.props.isCard ? 0.1 : 0.4;
+		const percentage = this.props.isCard ? 0.1 : 0;
 		const isVisible = (elemTop + (window.innerHeight * percentage)) < window.innerHeight && elemBottom >= 0;
     return isVisible;
 	}
@@ -66,7 +67,7 @@ class Segment extends React.Component {
 	}
 	
 	render() {
-		const { isSegmentInViewport, isFullScreen, isForNavigation, isCard, imgURL, isAnimationSlideIn, animationDelay, noPadding } = this.state;
+		const { isSegmentInViewport, isFullScreen, isForceFullScreen, isForNavigation, isCard, imgURL, isAnimationSlideIn, animationDelay, noPadding } = this.state;
 
 		let defaultClasses = "";
 
@@ -78,8 +79,17 @@ class Segment extends React.Component {
 
 		if (!isCard && !isForNavigation) {
 			defaultClasses += ` v-mid w-90-l w-90-m w-100 center`;
-			defaultClasses += ` ${isFullScreen ? "vh-100" : ""}`;
-			defaultClasses += ` ${noPadding ? "" : "pv7 ph3 ph4-l"}`;
+			
+			const defaultPadding = "ph4-l ph3";
+			// used by intro.
+			if (isForceFullScreen) {
+				defaultClasses += ` dtc vh-100 pt0-l pt0-m ${defaultPadding}`;
+			// full screen is not used atm.
+			} else if (isFullScreen) {
+				defaultClasses += ` vh-100-l h-auto pv0-l pv6 ${defaultPadding}`;
+			} else {
+				defaultClasses += ` ${noPadding ? "" : `pv7 ${defaultPadding}`}`;
+			}
 		}
 		defaultClasses += ` ${isSegmentInViewport ? "animation-running" : "animation-paused"}`;
 		

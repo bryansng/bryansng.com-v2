@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import './Navigation.css';
-import Segment from '../Segment';
 import content from '../../config/content';
 
 import imgBS from "../../assets/logo/logo-bs.png";
+import SlideIn from '../universal/SlideIn';
 // import imgYao from "../assets/logo/logo-yao.png";
 
 class Navigation extends Component {
@@ -11,7 +11,19 @@ class Navigation extends Component {
 		super();
 		this.burger = React.createRef();
 		this.linksContainer = React.createRef();
+    this.state = {
+      scrollDirection: 'still'
+    };
 	}
+
+  updateScrollDirection = () => {
+    if (this.prevScrollY > window.scrollY) {
+      this.setState({ scrollDirection: 'up' });
+    } else if (this.prevScrollY < window.scrollY) {
+      this.setState({ scrollDirection: 'down' });
+    }
+    this.prevScrollY = window.scrollY;
+  }
 
 	handleResize = () => {
 		const em = parseFloat(getComputedStyle(document.body).fontSize);
@@ -22,13 +34,16 @@ class Navigation extends Component {
 		// if ((windowWidth ) || (windowWidth >= 48*em && windowWidth < 64*em)) {
 	}
 
-	componentDidMount() {
-		window.addEventListener("resize", this.handleResize)
-	}
+  componentDidMount() {
+    this.prevScrollY = window.scrollY;
+    window.addEventListener("scroll", this.updateScrollDirection);
+		window.addEventListener("resize", this.handleResize);
+  }
 
-	componentWillUnmount() {
-		window.removeEventListener("resize", this.handleResize)
-	}
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.updateScrollDirection);
+		window.removeEventListener("resize", this.handleResize);
+  }
 
 	handleScroll = (scrollDirection) => {
 		if (scrollDirection === "down") {
@@ -64,7 +79,7 @@ class Navigation extends Component {
 	}
 
 	render() {
-		const { scrollDirection } = this.props;
+		const { scrollDirection } = this.state;
 		const { logo, tabs } = content.navigation;
 		return (
 			<div
@@ -72,19 +87,23 @@ class Navigation extends Component {
 				<div className="relative">
 					<div className="w-100 pv2 ph4 absolute shadow-3 nav-bg top-0 left-0">
 						<div className="flex flex-row flex-nowrap justify-between items-center">
-							<Segment isSegmentInViewport={true} isForNavigation={true} isAnimationSlideIn={false} animationDelay="delay-125">
-								<a href={logo.url} className="link dib no-underline dim-090 transition-ease-in">
-									<img src={imgBS} className="v-btm" style={{width: "3rem"}} alt="Logo" />
-								</a>
-							</Segment>
+							<div className="z-9999">
+								<SlideIn isSegmentInViewport={true} isAnimationSlideIn={false} animationDelay="delay-125">
+									<a href={logo.url} className="link dib no-underline dim-090 transition-ease-in">
+										<img src={imgBS} className="v-btm" style={{width: "3rem"}} alt="Logo" />
+									</a>
+								</SlideIn>
+							</div>
 
-							<Segment isSegmentInViewport={true} isForNavigation={true} isAnimationSlideIn={false} animationDelay="delay-075">
-								<div ref={this.burger} className="dn-l db pointer text-shadow-pop-parent" onClick={this.toggleNav}>
-									<div className="bar1 nav-text transition-ease-in"></div>
-									<div className="bar2 nav-text transition-ease-in"></div>
-									<div className="bar3 nav-text transition-ease-in"></div>
-								</div>
-							</Segment>
+							<div className="z-9999">
+								<SlideIn isSegmentInViewport={true} isAnimationSlideIn={false} animationDelay="delay-075">
+									<div ref={this.burger} className="dn-l db pointer text-shadow-pop-parent" onClick={this.toggleNav}>
+										<div className="bar1 nav-text transition-ease-in"></div>
+										<div className="bar2 nav-text transition-ease-in"></div>
+										<div className="bar3 nav-text transition-ease-in"></div>
+									</div>
+								</SlideIn>
+							</div>
 
 							<div ref={this.linksContainer} className="flex flex-row-l flex-column flex-nowrap transition-ease-in-05 static-l absolute hide-sidebar h-auto-l vh-100 w-auto-l w-50 z-5">
 								{tabs.map((tabObj, ind) =>
@@ -109,14 +128,14 @@ class NavigationTab extends Component {
 	render() {
 		const { tabObj, index, closeNav } = this.props;
 		return (
-			<Segment isSegmentInViewport={true} isForNavigation={true} isAnimationSlideIn={false} animationDelay="delay-075">
+			<SlideIn isSegmentInViewport={true} isAnimationSlideIn={false} animationDelay="delay-075">
 				<a
 					href={tabObj.url}
 					className="pv3 ph3 no-underline"
 					onClick={closeNav}>
 						<TabContent index={index+1} content={tabObj.name} />
 				</a>
-			</Segment>
+			</SlideIn>
 		)
 	}
 }

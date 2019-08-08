@@ -1,13 +1,13 @@
 import React from 'react';
-import Segment from './Segment';
-import { GitHub, ExternalLinkSymbol } from './SocialMedia/Logos';
+import SlideIn from '../universal/SlideIn';
+import { GitHub, ExternalLinkSymbol } from '../SocialMedia/Logos';
 // import { gql } from "apollo-boost";
 // import { Query, ApolloProvider } from 'react-apollo';
 // import { ApolloClient } from 'apollo-client';
 // import { createHttpLink } from 'apollo-link-http';
 // import { setContext } from 'apollo-link-context';
 // import { InMemoryCache } from 'apollo-cache-inmemory';
-import content from '../config/content';
+import content from '../../config/content';
 const { projects } = content;
 
 /* const httpLink = createHttpLink({
@@ -119,22 +119,26 @@ export default class GitHubPinnedRepos extends React.Component {
 
 const RepoCard = ({ repo, imgURL }) => {
 	return (
-		<Segment isCard={true} imgURL={imgURL}>
-			<div className="pa3 tl shadow-3 cursor-default repo-card-l repo-card-m repo-card-080">
-				<div className="w5 h5 relative">
-					<ExternalLinks url={repo.url} homepageURL={repo.homepageUrl} />
-					<h2 className="mv0 title">{handleTextQuirks(repo.name)}</h2>
-					<p className="desc lh-title">{repo.description}</p>
-					<div className="flex flex-row flex-wrap items-start justify-start content-start absolute left-0 bottom-0 topics">
-						{repo.repositoryTopics.edges.map((topic_edges, ind) => (
-							<Topic
-								key={ind}
-								topic_name={topic_edges.node.topic.name} />
-						))}
+		<SlideIn percentageInViewport={0.1}>
+			<div className="ma1 br2 dt hide-child-l hide-child-m contain bg-center repo-card-img-bg transition-hide-partial transition-ease-in" style={{backgroundImage: `url(${imgURL})`}}>
+				<span className="dtc v-mid white w-100 h-100 child-l child-m o-100-ns bg-black-40">
+					<div className="pa3 tl shadow-3 cursor-default repo-card-l repo-card-m repo-card-080">
+						<div className="w5 h5 relative">
+							<ExternalLinks url={repo.url} homepageURL={repo.homepageUrl} />
+							<h2 className="mv0 title">{handleTextQuirks(repo.name)}</h2>
+							<p className="desc lh-title">{repo.description}</p>
+							<div className="flex flex-row flex-wrap items-start justify-start content-start absolute left-0 bottom-0 topics">
+								{repo.repositoryTopics.edges.map((topic_edges, ind) => (
+									<Topic
+										key={ind}
+										topic_name={topic_edges.node.topic.name} />
+								))}
+							</div>
+						</div>
 					</div>
-				</div>
+				</span>
 			</div>
-		</Segment>
+		</SlideIn>
 	)
 }
 

@@ -1,8 +1,9 @@
 import React from 'react';
-import Segment from './Segment';
 import content from '../config/content';
 import { TabContent } from './Navigation/Navigation';
 import { TransitionComponent } from './About';
+import SlideIn from './universal/SlideIn';
+import PaddingResizer from './universal/PaddingResizer';
 
 class Works extends React.Component {
 	constructor() {
@@ -25,27 +26,29 @@ class Works extends React.Component {
 		const { employment_id_to_show } = this.state;
 		return (
 			<div id="works">
-				<Segment>
-					<div className="w-70-l center">
-						<div className="pv3">
-							<TabContent index={componentOrder} content={section_name} isLink={false} />
-						</div>
-						<div className="flex flex-row-l flex-column flex-nowrap justify-between tl">
-							<div className="w-25-l pv0-l pt3 pb4">
-								<CompaniesName employments={employments} employmentIDToShow={employment_id_to_show} handleClick={this.handleClick} />
+				<SlideIn>
+					<PaddingResizer>
+						<div className="w-70-l w-90 center">
+							<div className="pv3">
+								<TabContent index={componentOrder} content={section_name} isLink={false} />
 							</div>
-							<div className="w-70-l">
-								{employments.map((employment, ind) => 
-									<TransitionComponent key={ind} index={ind} idToShow={employment_id_to_show}>
-										<RoleCompany employment={employment} />
-										<DateOfService employment={employment} />
-										<EmploymentDesc employment={employment} />
-									</TransitionComponent>
-								)}
+							<div className="flex flex-row-l flex-column flex-nowrap justify-between tl">
+								<div className="w-25-l pv0-l pt3 pb4">
+									<CompaniesName employments={employments} employmentIDToShow={employment_id_to_show} handleClick={this.handleClick} />
+								</div>
+								<div className="w-70-l">
+									{employments.map((employment, ind) => 
+										<TransitionComponent key={ind} index={ind} idToShow={employment_id_to_show}>
+											<RoleCompany employment={employment} />
+											<DateOfService employment={employment} />
+											<EmploymentDesc employment={employment} />
+										</TransitionComponent>
+									)}
+								</div>
 							</div>
 						</div>
-					</div>
-				</Segment>
+					</PaddingResizer>
+				</SlideIn>
 			</div>
 		)
 	}
