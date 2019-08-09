@@ -120,7 +120,7 @@
 									},
 									"name": "potato-face-detector",
 									"createdAt": "2019-06-09T14:06:27Z",
-									"updatedAt": "2019-08-05T15:54:19Z",
+									"updatedAt": "2019-08-08T22:59:18Z",
 									"description": "Face detector written by potatoes, for potatoes, on a potato.",
 									"shortDescriptionHTML": "Face de…",
 									"homepageUrl": "https://bryansng.github.io/potato-face-detector/",
@@ -260,9 +260,9 @@
 									},
 									"name": "bryansng.github.io",
 									"createdAt": "2018-07-24T13:14:26Z",
-									"updatedAt": "2019-08-05T14:47:45Z",
-									"description": "Deprecated Personal Website",
-									"shortDescriptionHTML": "Depreca…",
+									"updatedAt": "2019-08-08T22:20:54Z",
+									"description": "Portfolio V1",
+									"shortDescriptionHTML": "Portfol…",
 									"homepageUrl": "https://bryansng.github.io/",
 									"url": "https://github.com/bryansng/bryansng.github.io",
 									"repositoryTopics": {
@@ -292,6 +292,13 @@
 												"node": {
 													"topic": {
 														"name": "css"
+													}
+												}
+											},
+											{
+												"node": {
+													"topic": {
+														"name": "jekyll"
 													}
 												}
 											}
@@ -336,10 +343,10 @@
 									},
 									"name": "the-social",
 									"createdAt": "2018-05-25T08:58:11Z",
-									"updatedAt": "2019-08-05T16:06:41Z",
-									"description": "Web Design Project 2018",
-									"shortDescriptionHTML": "Web Des…",
-									"homepageUrl": "https://bryansng.github.io/thesocial/",
+									"updatedAt": "2019-08-09T11:18:29Z",
+									"description": "COMP20030 Web Design Project 2018 - A well-being website.",
+									"shortDescriptionHTML": "COMP200…",
+									"homepageUrl": "https://bryansng.github.io/the-social/",
 									"url": "https://github.com/bryansng/the-social",
 									"repositoryTopics": {
 										"edges": [
