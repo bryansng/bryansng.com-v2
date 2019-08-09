@@ -1,10 +1,18 @@
 import React, { Component } from 'react';
 import './LogoIntro.css';
+import styled from 'styled-components';
 
 import imgBS from "../../assets/logo/logo-bs.png";
 // import imgYao from "../assets/logo/logo-yao.png";
 
-// slide-in-bck-center slide-out-bck-center
+const AnimationContainer = styled.div.attrs({
+	className: `vh-100 flex justify-center items-center`
+})``
+
+const AnimationStage = styled.div`
+	perspective: 200px;
+`
+
 class LogoIntro extends Component {
 	constructor() {
 		super();
@@ -26,15 +34,15 @@ class LogoIntro extends Component {
 	render() {
 		const { isAnimationSlideIn } = this.state;
 		return (
-			<div className="vh-100 flex justify-center items-center">
-				<div className="anim-stage">
+			<AnimationContainer>
+				<AnimationStage>
 					<img
 						src={imgBS}
 						className={`anim-object ${isAnimationSlideIn ? "blur-in-bck-center" : "slide-out-bck-center"}`}
 						onAnimationEnd={this.handleAnimationEnd}
 						alt="" />
-				</div>
-			</div>
+				</AnimationStage>
+			</AnimationContainer>
 		)
 	}
 }
