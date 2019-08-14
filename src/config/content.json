@@ -1,4 +1,7 @@
 {
+	"mailto": {
+		"email": "sngby98@gmail.com"
+	},
 	"intro": {
 		"section_name": "Introduction",
 		"hi": "你好, my name is",
@@ -98,7 +101,7 @@
 	"projects": {
 		"section_name": "Projects",
 		"github_username": "bryansng",
-		"capitalizables": ["html", "css", "api", "sql", "fx", "js"],
+		"capitalizables": ["html", "css", "api", "sql", "fx", "js", "ql"],
 		"domains": [".io", ".com"],
 		"graph_ql_data": {
 			"data": {
@@ -108,20 +111,10 @@
 						"edges": [
 							{
 								"node": {
-									"resourcePath": "/bryansng/potato-face-detector",
-									"folder": {
-										"entries": [
-											{
-												"oid": "b495c90c9918b20a37cdbdfc2957bcbce6108de9",
-												"object": {},
-												"name": "img"
-											}
-										]
-									},
 									"name": "potato-face-detector",
 									"createdAt": "2019-06-09T14:06:27Z",
-									"updatedAt": "2019-08-08T22:59:18Z",
-									"description": "Face detector written by potatoes, for potatoes, on a potato.",
+									"updatedAt": "2019-08-14T20:12:57Z",
+									"description": "Face detector using Clarifai's Face Detect API.",
 									"shortDescriptionHTML": "Face de…",
 									"homepageUrl": "https://bryansng.github.io/potato-face-detector/",
 									"url": "https://github.com/bryansng/potato-face-detector",
@@ -198,16 +191,6 @@
 							},
 							{
 								"node": {
-									"resourcePath": "/bryansng/backgammon",
-									"folder": {
-										"entries": [
-											{
-												"oid": "882c5da0e2d8a2c7c9ba15df2c285337b08ab39b",
-												"object": {},
-												"name": "img"
-											}
-										]
-									},
 									"name": "backgammon",
 									"createdAt": "2019-01-27T17:03:30Z",
 									"updatedAt": "2019-08-05T16:14:43Z",
@@ -248,57 +231,54 @@
 							},
 							{
 								"node": {
-									"resourcePath": "/bryansng/bryansng.github.io",
-									"folder": {
-										"entries": [
-											{
-												"oid": "a3dc4ad9030d166ca3763d1176c26de917678abb",
-												"object": {},
-												"name": "img"
-											}
-										]
-									},
-									"name": "bryansng.github.io",
-									"createdAt": "2018-07-24T13:14:26Z",
-									"updatedAt": "2019-08-08T22:20:54Z",
-									"description": "Portfolio V1",
+									"name": "bryansng.com",
+									"createdAt": "2019-08-06T20:36:29Z",
+									"updatedAt": "2019-08-09T11:22:38Z",
+									"description": "Portfolio V2",
 									"shortDescriptionHTML": "Portfol…",
-									"homepageUrl": "https://bryansng.github.io/",
-									"url": "https://github.com/bryansng/bryansng.github.io",
+									"homepageUrl": "https://www.bryansng.com",
+									"url": "https://github.com/bryansng/bryansng.com",
 									"repositoryTopics": {
 										"edges": [
 											{
 												"node": {
 													"topic": {
-														"name": "firebase"
+														"name": "react"
 													}
 												}
 											},
 											{
 												"node": {
 													"topic": {
-														"name": "js"
+														"name": "tachyons"
 													}
 												}
 											},
 											{
 												"node": {
 													"topic": {
-														"name": "html"
+														"name": "graphql"
 													}
 												}
 											},
 											{
 												"node": {
 													"topic": {
-														"name": "css"
+														"name": "netlify"
 													}
 												}
 											},
 											{
 												"node": {
 													"topic": {
-														"name": "jekyll"
+														"name": "portfolio"
+													}
+												}
+											},
+											{
+												"node": {
+													"topic": {
+														"name": "personal-website"
 													}
 												}
 											}
@@ -331,16 +311,6 @@
 							},
 							{
 								"node": {
-									"resourcePath": "/bryansng/the-social",
-									"folder": {
-										"entries": [
-											{
-												"oid": "9be8a3a005768db4d0030f2653a4561a04d8679d",
-												"object": {},
-												"name": "img"
-											}
-										]
-									},
 									"name": "the-social",
 									"createdAt": "2018-05-25T08:58:11Z",
 									"updatedAt": "2019-08-09T11:18:29Z",
@@ -413,16 +383,6 @@
 							},
 							{
 								"node": {
-									"resourcePath": "/bryansng/reversi",
-									"folder": {
-										"entries": [
-											{
-												"oid": "95311313e72a307e64e8cd22609189f304d43e4c",
-												"object": {},
-												"name": "img"
-											}
-										]
-									},
 									"name": "reversi",
 									"createdAt": "2018-08-02T09:49:09Z",
 									"updatedAt": "2019-08-05T16:04:19Z",
@@ -462,16 +422,6 @@
 							},
 							{
 								"node": {
-									"resourcePath": "/bryansng/plain-planes",
-									"folder": {
-										"entries": [
-											{
-												"oid": "e028dab537ccdf298338f74d169ef5f495cdb0fc",
-												"object": {},
-												"name": "img"
-											}
-										]
-									},
 									"name": "plain-planes",
 									"createdAt": "2017-08-12T04:25:39Z",
 									"updatedAt": "2019-08-05T16:02:51Z",

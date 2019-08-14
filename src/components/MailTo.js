@@ -1,8 +1,9 @@
 import React from 'react';
+import content from '../config/content';
 
 const MailTo = ({ isCenter = false, text = "Say Hello" }) => {
 	return (
-		<a href="mailto:sngby98@gmail.com" className="no-underline">
+		<a href={`mailto:${content.mailto.email}`} className="no-underline">
 			<button
 				className={`pv2 ph4 pointer ttu
 					${isCenter ? "center" : ""}
