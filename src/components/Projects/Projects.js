@@ -1,5 +1,5 @@
 import React from 'react';
-import GitHubPinnedRepos from './GitHubPinnedRepos';
+import PinnedRepos from './GitHubPinnedRepos';
 import { TabContent } from '../Navigation/Navigation';
 import content from '../../config/content';
 import SlideIn from '../universal/SlideIn';
@@ -17,7 +17,7 @@ export default class Projects extends React.Component {
 							<div className="pv3">
 								<TabContent index={componentOrder} content={section_name} isLink={false} />
 							</div>
-							<GitHubPinnedRepos />
+							<PinnedRepos />
 						</div>
 					</PaddingResizer>
 				</SlideIn>

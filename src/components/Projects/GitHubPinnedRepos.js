@@ -1,16 +1,16 @@
 import React from 'react';
 import SlideIn from '../universal/SlideIn';
 import { GitHub, ExternalLinkSymbol } from '../SocialMedia/Logos';
-// import { gql } from "apollo-boost";
-// import { Query, ApolloProvider } from 'react-apollo';
-// import { ApolloClient } from 'apollo-client';
-// import { createHttpLink } from 'apollo-link-http';
-// import { setContext } from 'apollo-link-context';
-// import { InMemoryCache } from 'apollo-cache-inmemory';
+import { gql } from "apollo-boost";
+import { Query, ApolloProvider } from 'react-apollo';
+import { ApolloClient } from 'apollo-client';
+import { createHttpLink } from 'apollo-link-http';
+import { setContext } from 'apollo-link-context';
+import { InMemoryCache } from 'apollo-cache-inmemory';
 import content from '../../config/content';
 const { projects } = content;
 
-/* const httpLink = createHttpLink({
+const httpLink = createHttpLink({
   uri: 'https://api.github.com/graphql',
 });
 
@@ -32,7 +32,7 @@ const client = new ApolloClient({
   cache: new InMemoryCache()
 });
 
-export default class GitHubPinnedRepos extends React.Component {
+class GitHubPinnedRepos extends React.Component {
 	render() {
 		const { github_username } = projects;
 		return (
@@ -83,24 +83,28 @@ export default class GitHubPinnedRepos extends React.Component {
 					if (error) return <p>Error :(</p>;
 					
 					return (
-						<ApolloProvider client={client}>
-							<div className="w-90-l w-100 center flex flex-row flex-wrap justify-center">
-								{data.user.pinnedItems.edges.map((repo_edges, ind) => {
-									const repo = repo_edges.node;
-									const imgURL = `https://raw.githubusercontent.com/${github_username}/${repo.name}/master/readme-resources/img/overview.png`;
+						<div className="w-90-l w-100 center flex flex-row flex-wrap justify-center">
+							{data.user.pinnedItems.edges.map((repo_edges, ind) => {
+								const repo = repo_edges.node;
+								const imgURL = `https://raw.githubusercontent.com/${github_username}/${repo.name}/master/readme-resources/img/overview.png`;
 
-									return <RepoCard key={ind} repo={repo} imgURL={imgURL} />
-								})}
-							</div>
-						</ApolloProvider>
+								return <RepoCard key={ind} repo={repo} imgURL={imgURL} />
+							})}
+						</div>
 					)
 				}}
 			</Query>
 		)
 	}
-} */
+}
 
-export default class GitHubPinnedRepos extends React.Component {
+const PinnedRepos = () => (
+	<ApolloProvider client={client}>
+		<GitHubPinnedRepos />
+	</ApolloProvider>
+)
+
+/* export default class GitHubPinnedRepos extends React.Component {
 	render() {
 		const { github_username } = projects;
 		const { data } = projects.graph_ql_data;
@@ -115,7 +119,7 @@ export default class GitHubPinnedRepos extends React.Component {
 			</div>
 		)
 	}
-}
+} */
 
 const RepoCard = ({ repo, imgURL }) => (
 	<SlideIn percentageInViewport={0.1}>
@@ -183,3 +187,5 @@ const handleTextQuirks = (text) => {
 
 	return result;
 }
+
+export default PinnedRepos;
