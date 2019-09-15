@@ -32,7 +32,7 @@ class About extends React.Component {
 			<div id="about">
 				<SlideIn>
 					<PaddingResizer>
-						<div className="w-90-l w-75 center tl">
+						<div className="w-80-l w-75 center tl">
 							<div className="pv3">
 								<TabContent index={componentOrder} content={section_name} isLink={false} />
 							</div>

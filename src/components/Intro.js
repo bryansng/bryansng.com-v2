@@ -13,7 +13,7 @@ class Intro extends React.Component {
 				{/* <Segment isSegmentInViewport={true} isForceFullScreen={true}> */}
 				<SlideIn isSegmentInViewport={true}>
 					<PaddingResizer heightOffset={0.3}>
-						<div className="w-70-l w-90 center tl">
+						<div className="w-60-l w-90 center tl">
 							<p className="mv0 pv0 slide-in-bottom delay-025 greet font-ubuntu-mono">{hi}</p>
 							<h1 className="mv0 pv1 f1 slide-in-bottom delay-050 title">{name}</h1>
 							<h2 className="mv0 pv1 f2 slide-in-bottom delay-075 desc">{short_desc}</h2>

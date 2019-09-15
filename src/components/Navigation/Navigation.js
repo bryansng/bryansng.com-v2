@@ -1,15 +1,10 @@
 import React, { Component } from 'react'
-import styled from 'styled-components';
 import './Navigation.css';
 import content from '../../config/content';
 
 import imgBS from "../../assets/logo/logo-bs.png";
 import SlideIn from '../universal/SlideIn';
 // import imgYao from "../assets/logo/logo-yao.png";
-
-const Container = styled.div.attrs({
-	className: `w-100 z-1 fixed nav-transition-top`
-})``
 
 class Navigation extends Component {
 	constructor() {
