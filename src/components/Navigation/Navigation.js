@@ -1,10 +1,15 @@
 import React, { Component } from 'react'
+import styled from 'styled-components';
 import './Navigation.css';
 import content from '../../config/content';
 
 import imgBS from "../../assets/logo/logo-bs.png";
 import SlideIn from '../universal/SlideIn';
 // import imgYao from "../assets/logo/logo-yao.png";
+
+const Container = styled.div.attrs({
+	className: `w-100 z-1 fixed nav-transition-top`
+})``
 
 class Navigation extends Component {
 	constructor() {
@@ -83,10 +88,10 @@ class Navigation extends Component {
 		const { logo, tabs } = content.navigation;
 		return (
 			<div
-				className={`w-100 z-1 fixed nav-transition-top ${this.handleScroll(scrollDirection)}`}>
+				className={`z-1 fixed nav-transition-top ${this.handleScroll(scrollDirection)}`} style={{width: "100vw"}}>
 				<div className="relative">
 					<div className="w-100 pv2 ph4 absolute shadow-3 nav-bg top-0 left-0">
-						<div className="flex flex-row flex-nowrap justify-between items-center">
+						<div className="w-100 flex flex-row flex-nowrap justify-between items-center">
 							<div className="z-9999">
 								<SlideIn isSegmentInViewport={true} isAnimationSlideIn={false} animationDelay="delay-125">
 									<a href={logo.url} className="link dib no-underline dim-090 transition-ease-in">

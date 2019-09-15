@@ -60,7 +60,7 @@ class App extends React.Component {
     return (
       isLogoAnimationOver
       ?
-      <div>
+      <div className="overflow-x-hidden">
         <Navigation />
         <div className="entire-page-bg font-opensans page-root transition-ease-in">
           <div className="flex flex-column">
