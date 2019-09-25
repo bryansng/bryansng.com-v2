@@ -53,13 +53,13 @@ class App extends React.Component {
       )
     }
 
-    // const { isLogoAnimationOver } = this.state;
-    // isLogoAnimationOver ?
-    // document.body.classList.remove("overflow-hidden") :
-    // document.body.classList.add("overflow-hidden")
+    const { isLogoAnimationOver } = this.state;
+    isLogoAnimationOver ?
+    document.body.classList.remove("overflow-hidden") :
+    document.body.classList.add("overflow-hidden")
     return (
-      // isLogoAnimationOver
-      // ?
+      isLogoAnimationOver
+      ?
       <div className="overflow-x-hidden">
         <Navigation />
         <div className="entire-page-bg font-opensans page-root transition-ease-in">
@@ -69,8 +69,8 @@ class App extends React.Component {
           <Footer />
         </div>
       </div>
-      // :
-      // <LogoIntro showContent={this.showContent} />
+      :
+      <LogoIntro showContent={this.showContent} />
     );
   }
 }
