@@ -91,9 +91,27 @@
 	"projects": {
 		"section_name": "Projects",
 		"github_username": "bryansng",
-		"capitalizables": ["html", "css", "api", "sql", "fx", "js", "ql"],
+		"capitalizables": ["html", "css", "api", "sql", "fx", "js", "ql", "lms"],
 		"domains": [".io", ".com"],
-		"token": "86e517d648d8258134abe96df506fd37022e1043"
+		"token": "86e517d648d8258134abe96df506fd37022e1043",
+		"other_notable_github_repos": [
+			"lms",
+			"the-social",
+			"reversi",
+			"ipod-playlist-sort-n-shuffle",
+			"bryansng.github.io"
+		],
+		"delays": {
+			"more_button": {
+				"position": 6
+			},
+			"pinned_repo_cards": {
+				"start_delay": 0.2
+			},
+			"other_repo_cards": {
+				"start_delay": 0.05
+			}
+		}
 	},
 
 	"works": {

@@ -11,6 +11,7 @@ import Projects from "./components/Projects/Projects";
 import Works from "./components/Works";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+const { settings } = content;
 
 class App extends React.Component {
   constructor(props) {
@@ -55,7 +56,7 @@ class App extends React.Component {
     }
 
     const { isLogoAnimationOver } = this.state;
-    const { enable_logo_animation } = content.settings;
+    const { enable_logo_animation } = settings;
     isLogoAnimationOver || !enable_logo_animation
       ? document.body.classList.remove("overflow-hidden")
       : document.body.classList.add("overflow-hidden");

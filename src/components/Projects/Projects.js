@@ -1,5 +1,5 @@
 import React from "react";
-import PinnedRepos from "./GitHubPinnedRepos";
+import Repos from "./Repos/Repos";
 import { TabContent } from "../Navigation/Navigation";
 import content from "../../config/content";
 import SlideIn from "../universal/SlideIn";
@@ -13,7 +13,7 @@ export default class Projects extends React.Component {
       <div id="projects">
         <SlideIn>
           <PaddingResizer>
-            <div className="w-two-thirds-l w-90 center tc">
+            <div className="w-40-xxxl w-50-xxl w-60-xl w-70-l-mine w-90-m w-90-ns center tc">
               <div className="pv3">
                 <TabContent
                   index={componentOrder}
@@ -21,7 +21,7 @@ export default class Projects extends React.Component {
                   isLink={false}
                 />
               </div>
-              <PinnedRepos />
+              <Repos />
             </div>
           </PaddingResizer>
         </SlideIn>

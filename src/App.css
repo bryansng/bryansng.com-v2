@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   overflow: auto;
   margin: 0;
@@ -11,7 +12,8 @@ a {
   display: inline-block;
   text-decoration: none;
 }
-a > div {
+
+a>div {
   vertical-align: bottom;
 }
 
@@ -28,21 +30,27 @@ If you want to use for transitions, try adding transition-delay for all of them 
 .delay-020 {
   animation-delay: 0.2s;
 }
+
 .delay-025 {
   animation-delay: 0.25s;
 }
+
 .delay-050 {
   animation-delay: 0.5s;
 }
+
 .delay-075 {
   animation-delay: 0.75s;
 }
+
 .delay-100 {
   animation-delay: 1s;
 }
+
 .delay-125 {
   animation-delay: 1.25s;
 }
+
 .delay-150 {
   animation-delay: 1.5s;
 }
@@ -51,21 +59,27 @@ If you want to use for transitions, try adding transition-delay for all of them 
 .duration-020 {
   animation-duration: 0.2s;
 }
+
 .duration-025 {
   animation-duration: 0.25s;
 }
+
 .duration-050 {
   animation-duration: 0.5s;
 }
+
 .duration-075 {
   animation-duration: 0.75s;
 }
+
 .duration-100 {
   animation-duration: 1s;
 }
+
 .duration-125 {
   animation-duration: 1.25s;
 }
+
 .duration-150 {
   animation-duration: 1.5s;
 }
@@ -76,11 +90,13 @@ If you want to use for transitions, try adding transition-delay for all of them 
   animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
   animation-fill-mode: both;
 }
+
 @keyframes slide-in-bottom {
   0% {
     transform: translateY(50px);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0);
     opacity: 1;
@@ -96,10 +112,12 @@ If you want to use for transitions, try adding transition-delay for all of them 
   animation-duration: 1s;
   animation-fill-mode: both;
 }
+
 @keyframes animation-ease-in {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -108,10 +126,11 @@ If you want to use for transitions, try adding transition-delay for all of them 
 
 
 .animation-paused {
-	animation-play-state: paused;
+  animation-play-state: paused;
 }
+
 .animation-running {
-	animation-play-state: running;
+  animation-play-state: running;
 }
 
 
@@ -120,12 +139,15 @@ If you want to use for transitions, try adding transition-delay for all of them 
 .transition-ease-in {
   transition: all 0.2s;
 }
+
 .transition-ease-in-05 {
   transition: all 0.5s;
 }
+
 .transition-ease-in-10 {
   transition: all 10s;
 }
+
 .hide {
   visibility: hidden;
 }
@@ -134,6 +156,7 @@ If you want to use for transitions, try adding transition-delay for all of them 
 .transition-hide-partial {
   filter: brightness(85%);
 }
+
 .transition-hide-partial:hover {
   filter: brightness(100%);
 }
@@ -143,6 +166,7 @@ If you want to use for transitions, try adding transition-delay for all of them 
 .transition-underline {
   position: relative;
 }
+
 .transition-underline::before {
   content: '';
   position: absolute;
@@ -150,12 +174,13 @@ If you want to use for transitions, try adding transition-delay for all of them 
   left: 0;
   right: 0;
   height: 2px;
-	background-color: #D4D4D4;
+  background-color: #D4D4D4;
   background-color: #DCDCAA;
   transform-origin: bottom right;
   transform: scaleX(0);
   transition: transform 0.2s ease;
 }
+
 .transition-underline:hover::before {
   transform-origin: bottom left;
   transform: scaleX(1);
@@ -167,6 +192,7 @@ If you want to use for transitions, try adding transition-delay for all of them 
 .dim-080:hover {
   opacity: 0.8;
 }
+
 .dim-090:hover {
   opacity: 0.9;
 }
@@ -178,14 +204,16 @@ If you want to use for transitions, try adding transition-delay for all of them 
   display: inline-block;
   position: relative;
 }
+
 .picture-frame {
   z-index: 9999;
   background-color: #C586C0;
 
   transition: background-color 0.2s;
 }
+
 .picture-frame:hover {
-	background-color: #C586C0;
+  background-color: #C586C0;
 }
 
 .picture-shadow {
@@ -205,7 +233,8 @@ If you want to use for transitions, try adding transition-delay for all of them 
   border-width: 3px;
   transform: translate(15px, 15px);
 }
-.picture-frame:hover + .picture-shadow {
+
+.picture-frame:hover+.picture-shadow {
   transform: translate(10px, 10px);
 }
 
@@ -215,6 +244,7 @@ If you want to use for transitions, try adding transition-delay for all of them 
 
   transition: filter 0.2s;
 }
+
 .me-picture:hover {
   opacity: 1;
   filter: brightness(110%) contrast(105%) sepia(20%);
@@ -232,17 +262,19 @@ If you want to use for transitions, try adding transition-delay for all of them 
 
 .font-ubuntu-mono {
   font-family: 'Ubuntu Mono', monospace;
-	font-weight: normal;
+  font-weight: normal;
 }
+
 .font-ubuntu-mono-bold {
   font-family: 'Ubuntu Mono', monospace;
-	font-weight: bold;
+  font-weight: bold;
 }
 
 .font-opensans {
   font-family: 'Open Sans', sans-serif;
   font-weight: normal;
 }
+
 .font-opensans-bold {
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
@@ -277,28 +309,134 @@ font-family: 'Liu Jian Mao Cao', cursive;
 
 
 @media screen and (min-width: 48em) {
-  .o-0-ns { opacity: 0; }
-  .o-100-ns { opacity: 100; }
-  .hide-child-ns .child-ns { opacity: 0; }
+  .o-0-ns {
+    opacity: 0;
+  }
+
+  .o-100-ns {
+    opacity: 100;
+  }
+
+  .hide-child-ns .child-ns {
+    opacity: 0;
+  }
+
   .hide-child-ns:hover .child-ns,
   .hide-child-ns:focus .child-ns,
-  .hide-child-ns:active .child-ns { opacity: 1; }
+  .hide-child-ns:active .child-ns {
+    opacity: 1;
+  }
 }
 
-@media screen and (min-width: 48em) and (max-width: 64em) {
-  .o-0-m { opacity: 0; }
-  .o-100-m { opacity: 100; }
-  .hide-child-m .child-m { opacity: 0; }
+@media screen and (max-width: 64em) and (min-width: 48em) {
+  .o-0-m {
+    opacity: 0;
+  }
+
+  .o-100-m {
+    opacity: 100;
+  }
+
+  .hide-child-m .child-m {
+    opacity: 0;
+  }
+
   .hide-child-m:hover .child-m,
   .hide-child-m:focus .child-m,
-  .hide-child-m:active .child-m { opacity: 1; }
+  .hide-child-m:active .child-m {
+    opacity: 1;
+  }
 }
 
 @media screen and (min-width: 64em) {
-  .o-0-l { opacity: 0; }
-  .o-100-l { opacity: 100; }
-  .hide-child-l .child-l { opacity: 0; }
+  .o-0-l {
+    opacity: 0;
+  }
+
+  .o-100-l {
+    opacity: 100;
+  }
+
+  .hide-child-l .child-l {
+    opacity: 0;
+  }
+
   .hide-child-l:hover .child-l,
   .hide-child-l:focus .child-l,
-  .hide-child-l:active .child-l { opacity: 1; }
+  .hide-child-l:active .child-l {
+    opacity: 1;
+  }
+}
+
+/* Hack for project repos grid to seem even, i.e. 2 by 2, 3 by 3. */
+@media screen and (min-width: 64em) {
+  .w-40-l-mine {
+    width: 40%;
+  }
+
+  .w-50-l-mine {
+    width: 50%;
+  }
+
+  .w-60-l-mine {
+    width: 60%;
+  }
+
+  .w-70-l-mine {
+    width: 70%;
+  }
+
+  .w-75-l-mine {
+    width: 75%;
+  }
+
+  .w-third-l-mine {
+    width: 33.33333%;
+  }
+
+  .w-two-thirds-l-mine {
+    width: 66.66667%;
+  }
+}
+
+@media screen and (min-width: 96em) {
+  .w-50-xl {
+    width: 50%;
+  }
+
+  .w-60-xl {
+    width: 60%;
+  }
+
+  .w-70-xl {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 120em) {
+  .w-40-xxl {
+    width: 40%;
+  }
+
+  .w-50-xxl {
+    width: 50%;
+  }
+
+  .w-60-xxl {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 144em) {
+  .w-30-xxxl {
+    width: 30%;
+  }
+
+  .w-40-xxxl {
+    width: 40%;
+  }
+
+  .w-50-xxxl {
+    width: 50%;
+  }
 }
