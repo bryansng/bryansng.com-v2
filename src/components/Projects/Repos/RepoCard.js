@@ -12,7 +12,7 @@ const RepoCard = ({
   showWithoutWaitForScroll = false
 }) => (
   <SlideIn
-    percentageInViewport={0.1}
+    percentageInViewport={0.05}
     isSegmentInViewport={showWithoutWaitForScroll}
     animationDelayValue={delayMultiplier(position, startDelay)}
   >

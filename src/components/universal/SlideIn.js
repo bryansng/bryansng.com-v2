@@ -73,12 +73,17 @@ export default class SlideIn extends Component {
       isSegmentInViewport ? "animation-running" : "animation-paused"
     }`;
 
+    let defaultStyles =
+      animationDelayValue !== 0.0
+        ? { animationDelay: `${animationDelayValue}s` }
+        : {};
+
     return (
       <div
         ref={this.segment}
         onScroll={this.handleScroll}
         className={defaultClasses}
-        style={{ animationDelay: `${animationDelayValue}s` }}
+        style={defaultStyles}
       >
         {this.props.children}
       </div>
