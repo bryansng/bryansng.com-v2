@@ -10,7 +10,7 @@
 		"hi": "你好, my name is",
 		"name": "Bryan Sng.",
 		"short_desc": "I build websites and things.",
-		"desc": "I'm a Software Engineer based in Dublin, Ireland. Currently studying as much as I can from the field. At the moment, I specialize in building exceptional websites and web applications.",
+		"desc": "I'm a Software Engineer based in Dublin, Ireland. Currently getting the most out of my degree and learning new things outside of the curriculum. At the moment, I specialize in building exceptional websites, web applications and occasionally software applications.",
 		"button_msg": "Get in Touch"
 	},
 
@@ -40,8 +40,8 @@
 	"about": {
 		"section_name": "About me",
 		"descs": [
-			"I'm a Computer Science student at UCD, learning all the nooks and crannies of Computer Science. Currently in my penultimate year, graduating from BSc in Computer Science on September 2021.",
-			"Former Assistant Manager at a fast food restaurant. Former Founder of a game server. Completed courses from Udemy on Full-Stack Web Development, Linux Administration, Machine Learning and Python."
+			"I'm a Computer Science student at UCD, currently in my final year. I will be graduating with a BSc in Computer Science on September 2021. During academic breaks, I like to dip my toes into previously unchartered technologies.",
+			"Former Risk Consulting Intern at one of the Big 4. Former Assistant Manager at a fast food restaurant. Former Founder of a game server. Completed courses from Udemy on Full-Stack Web Development, Linux Administration, Machine Learning and Python."
 		],
 		"tech_desc": "Technologies that I've been working with recently:",
 		"categories": [{
@@ -63,7 +63,9 @@
 				"short_name": "ML",
 				"name": "Machine Learning",
 				"technologies": [
-					"Python (matplotlib, pyplot, sklearn, TensorFlow, numpy)"
+					"Python (matplotlib, pyplot, sklearn, TensorFlow, numpy)",
+					"Spark GraphX",
+					"Hadoop MapReduce"
 				]
 			},
 			{
@@ -84,7 +86,7 @@
 	"contact": {
 		"section_name": "Contact",
 		"title": "Coffee's on me",
-		"desc": "Feel free to reach out to me if you have any questions or comments about the services I can offer. Also, you could always just send me a friendly hello.",
+		"desc": "Feel free to reach out to me if you have any questions or comments about the services I can offer. Also, you could always just send me a friendly hello and change my mind that Starbuck's Pike Place roast are nothing but heavenly.",
 		"button_msg": "Say Hello"
 	},
 
@@ -92,10 +94,11 @@
 		"section_name": "Projects",
 		"github_username": "bryansng",
 		"capitalizables": ["html", "css", "api", "sql", "fx", "js", "ql", "lms"],
-		"domains": [".io", ".com"],
+		"domains": [".io", ".com", ".ie"],
 		"token": "",
 		"other_notable_github_repos": [
-			"lms",
+			"potato-face-detector",
+			"the-social",
 			"bryansng.github.io",
 			"reversi",
 			"ipod-playlist-sort-n-shuffle"
@@ -177,8 +180,36 @@
 					"Maintained an overall management style that follows company best practices."
 				],
 				"achievements": [
-					"Handled customer complaints (incorrect orders, rude drivers, long wait-time, health hazards, fake complaints). ",
+					"Handled customer complaints (incorrect orders, rude drivers, long wait-time, health hazards, fake complaints).",
 					"Developed a short and simple call script that allowed me to finish taking orders within 90 seconds with accuracy and upselling."
+				]
+			},
+			{
+				"job_id": 2,
+				"company": "KPMG Ireland",
+				"companies_info": {
+					"kpmg": {
+						"name": "KPMG Ireland",
+						"url": "https://home.kpmg/ie/en/home.html",
+						"url_desc": "KPMG Ireland's Website"
+					}
+				},
+				"role": "Risk Consulting Intern",
+				"start_date": {
+					"year": 2020,
+					"month": 4
+				},
+				"end_date": {
+					"year": 2020,
+					"month": 7
+				},
+				"job_desc": [
+					"As an internal auditor, provided independent assurance that an organization’s risk management, governance and internal control processes are operating effectively.",
+					"Ensured internal controls comply with laws and regulations (e.g. SOX Section 404 and SOX Information Security), to aid in maintaining accurate and timely financial reporting and data collection.",
+					"Eased the workloads of three managers and their teams by completing workpapers on time in three separate client engagements."
+				],
+				"achievements": [
+					""
 				]
 			}
 		]
@@ -186,7 +217,8 @@
 
 	"footer": {
 		"github_link_msg": "Built by Bryan Sng",
-		"github_link_url": "https://github.com/bryansng/bryansng.com"
+		"github_link_url": "https://github.com/bryansng/bryansng.com",
+		"last_updated": "01 Sep 2020"
 	},
 
 	"logos": {
