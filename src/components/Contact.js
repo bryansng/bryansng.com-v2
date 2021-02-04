@@ -15,7 +15,7 @@ class Contact extends React.Component {
       <div id="contact">
         <SlideIn>
           <PaddingResizer>
-            <div className="w-50-l w-90 center tc slide-in-bottom">
+            <div className="w-40-l w-90 center tc slide-in-bottom">
               <TabContent
                 index={componentOrder}
                 content="Contact"

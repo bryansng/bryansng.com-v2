@@ -23,7 +23,7 @@ class Intro extends React.Component {
               <h2 className="mv0 pv1 f2 slide-in-bottom delay-075 desc">
                 {short_desc}
               </h2>
-              <p className="pv3 lh-copy slide-in-bottom delay-100 paragraph">
+              <p className="w-90-l w-100 pv3 lh-copy slide-in-bottom delay-100 paragraph">
                 {desc}
               </p>
               <div className="slide-in-bottom delay-125">

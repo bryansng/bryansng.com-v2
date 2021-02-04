@@ -3,22 +3,22 @@
 		"enable_logo_animation": true
 	},
 	"mailto": {
-		"email": "sngby98@gmail.com"
+		"email": "hi@bryansng.com"
 	},
 	"intro": {
 		"section_name": "Introduction",
-		"hi": "你好, my name is",
+		"hi": "Hello, 你好, Apa khabar? my name is",
 		"name": "Bryan Sng.",
 		"short_desc": "I build websites and things.",
 		"desc": "I'm a Software Engineer based in Dublin, Ireland. Currently getting the most out of my degree and learning new things outside of the curriculum. At the moment, I specialize in building exceptional websites, web applications and occasionally software applications.",
 		"button_msg": "Get in Touch"
 	},
-
 	"navigation": {
 		"logo": {
 			"url": "#intro"
 		},
-		"tabs": [{
+		"tabs": [
+			{
 				"name": "About",
 				"url": "#about"
 			},
@@ -36,7 +36,6 @@
 			}
 		]
 	},
-
 	"about": {
 		"section_name": "About me",
 		"descs": [
@@ -44,7 +43,8 @@
 			"Former Risk Consulting Intern at one of the Big 4. Former Assistant Manager at a fast food restaurant. Former Founder of a game server. Completed courses from Udemy on Full-Stack Web Development, Linux Administration, Machine Learning and Python."
 		],
 		"tech_desc": "Technologies that I've been working with recently:",
-		"categories": [{
+		"categories": [
+			{
 				"category": "web",
 				"short_name": "Web",
 				"name": "Web Development",
@@ -72,31 +72,51 @@
 				"category": "unix",
 				"short_name": "Unix",
 				"name": "Unix Programming",
-				"technologies": ["Python", "BASH", "C"]
+				"technologies": [
+					"Python",
+					"BASH",
+					"C"
+				]
 			},
 			{
 				"category": "game",
 				"short_name": "Game",
 				"name": "Game Development",
-				"technologies": ["Python (pygame)", "Java (JavaFX)"]
+				"technologies": [
+					"Python (pygame)",
+					"Java (JavaFX)"
+				]
 			}
 		]
 	},
-
 	"contact": {
 		"section_name": "Contact",
 		"title": "Coffee's on me",
-		"desc": "Feel free to reach out to me if you have any questions or comments about the services I can offer. Also, you could always just send me a friendly hello and change my mind that Starbuck's Pike Place roast are nothing but heavenly.",
+		"desc": "Feel free to reach out to me if you have any questions or comments about the services I can offer. Also, you could always just send me a friendly hello.",
 		"button_msg": "Say Hello"
 	},
-
 	"projects": {
 		"section_name": "Projects",
 		"github_username": "bryansng",
-		"capitalizables": ["html", "css", "api", "sql", "fx", "js", "ql", "lms"],
-		"domains": [".io", ".com", ".ie"],
+		"capitalizables": [
+			"html",
+			"css",
+			"api",
+			"sql",
+			"fx",
+			"js",
+			"ql",
+			"lms",
+			"db"
+		],
+		"domains": [
+			".io",
+			".com",
+			".ie"
+		],
 		"token": "",
 		"other_notable_github_repos": [
+			"backgammon",
 			"potato-face-detector",
 			"the-social",
 			"bryansng.github.io",
@@ -115,10 +135,10 @@
 			}
 		}
 	},
-
 	"works": {
 		"section_name": "Experiences",
-		"employments": [{
+		"employments": [
+			{
 				"job_id": 0,
 				"company": "EternalzCraft Minecraft Server",
 				"companies_info": {
@@ -175,9 +195,9 @@
 					"month": 6
 				},
 				"job_desc": [
-					"Acting manager while manager on vacation.",
-					"Resolved customer issues to their overall satisfaction.",
-					"Maintained an overall management style that follows company best practices."
+					"Managed a team of cooks and drivers of a 2-in-1 restaurant through a busy summer.",
+					"Successfully handled on average 60+ orders daily from both menus without any customer complaints.",
+					"Developed a call script capable of finishing order taking within 90 seconds with accuracy and upselling."
 				],
 				"achievements": [
 					"Handled customer complaints (incorrect orders, rude drivers, long wait-time, health hazards, fake complaints).",
@@ -214,13 +234,11 @@
 			}
 		]
 	},
-
 	"footer": {
 		"github_link_msg": "Built by Bryan Sng",
 		"github_link_url": "https://github.com/bryansng/bryansng.com",
-		"last_updated": "01 Sep 2020"
+		"last_updated": "Feb 2021"
 	},
-
 	"logos": {
 		"github": {
 			"url": "https://github.com/bryansng",

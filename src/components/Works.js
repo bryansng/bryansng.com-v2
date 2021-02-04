@@ -28,7 +28,7 @@ class Works extends React.Component {
       <div id="works">
         <SlideIn>
           <PaddingResizer>
-            <div className="w-two-thirds-l w-75 center tc">
+            <div className="w-50-l w-75 center tc">
               <div className="pv3">
                 <TabContent
                   index={componentOrder}
