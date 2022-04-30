@@ -1,6 +1,6 @@
 {
 	"settings": {
-		"enable_logo_animation": true
+		"enable_logo_animation": false
 	},
 	"mailto": {
 		"email": "hi@bryansng.com"
@@ -10,7 +10,7 @@
 		"hi": "Hello, 你好, Apa khabar? my name is",
 		"name": "Bryan Sng.",
 		"short_desc": "I build web apps and things.",
-		"desc": "I'm a Software Engineer based in Dublin, Ireland. I just graduated and am currently looking for a Software Engineering position in Dublin, Ireland. I specialize in building exceptional websites, web applications, occasionally software applications, and in utilising my custom VSCode shortcuts.",
+		"desc": "I'm a Software Engineer based in Dublin, Ireland. I specialize in building exceptional websites, web applications, occasionally software applications, and in utilizing my custom VSCode shortcuts.",
 		"button_msg": "Get in Touch"
 	},
 	"navigation": {
@@ -39,7 +39,8 @@
 	"about": {
 		"section_name": "About me",
 		"descs": [
-			"I just graduated from my four year long Bachelor of Science in Computer Science from UCD. Currently looking for a Software Engineering position in Dublin, Ireland. In the meantime, I am enjoying my graduation and getting nagged by my favorite family member to look into stonks 🗿📈.",
+			"After graduating from my four year long Bachelor of Science in Computer Science from UCD, I took up a Web Developer position in Dublin, Ireland, and continued to hone my skills in that space till this day.",
+			"Outside of work 👨🏻‍💻, besides getting nagged by my favorite family member to look into stonks 🗿📈, I code recreationally and play casual games like Genshin Impact.",
 			"I have also made some pretty random life choices and excelled at them... Former Risk Consulting Intern at one of the Big 4. Former Assistant Manager at a 2-in-1 fast food restaurant. Former Founder of a Minecraft server. Completed courses from Udemy on Full-Stack Web Development, Linux Administration, Machine Learning and Python."
 		],
 		"tech_desc": "Technologies that I've worked with:",
@@ -49,12 +50,13 @@
 				"short_name": "Web",
 				"name": "Web Development",
 				"technologies": [
-					"React + Redux",
+					"React + Redux / MobX",
 					"Node.js + Express.js / Spring Boot",
 					"Redis / MongoDB / PostgresSQL / MySQL / Firebase",
 					"Progressive Web Apps (PWAs)",
 					"GraphQL / RESTful APIs",
 					"Jest",
+					"Wordpress / Gatsby",
 					"Webpack2"
 				]
 			},
@@ -227,13 +229,32 @@
 				"achievements": [
 					""
 				]
+			},
+			{
+				"job_id": 3,
+				"company": "AxonDivision",
+				"companies_info": {
+					"axonDivision": {
+						"name": "AxonDivision",
+						"url": "https://www.axondivision.com/",
+						"url_desc": "AxonDivision Homepage"
+					}
+				},
+				"role": "Web Developer",
+				"start_date": {
+					"year": 2021,
+					"month": 8
+				},
+				"end_date": null,
+				"job_desc": [],
+				"achievements": []
 			}
 		]
 	},
 	"footer": {
 		"github_link_msg": "Built by Bryan Sng",
 		"github_link_url": "https://github.com/bryansng/bryansng.com",
-		"last_updated": "Aug 2021"
+		"last_updated": "Apr 30, 2022"
 	},
 	"logos": {
 		"github": {

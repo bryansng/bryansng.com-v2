@@ -240,7 +240,7 @@ If you want to use for transitions, try adding transition-delay for all of them 
 
 .me-picture {
   opacity: 0.5;
-  filter: brightness(110%) contrast(105%) sepia(20%)hue-rotate(-30deg);
+  filter: brightness(110%) contrast(105%) sepia(20%) hue-rotate(-30deg);
 
   transition: filter 0.2s;
 }

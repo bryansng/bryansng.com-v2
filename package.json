@@ -3,15 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@linaria/babel-preset": "^3.0.0-beta.15",
+    "@linaria/core": "^3.0.0-beta.15",
+    "@linaria/react": "^3.0.0-beta.15",
+    "@linaria/shaker": "^3.0.0-beta.15",
     "apollo-boost": "^0.4.3",
     "apollo-cache-inmemory": "^1.6.2",
     "apollo-client": "^2.6.3",
     "apollo-link-context": "^1.0.18",
     "apollo-link-http": "^1.5.15",
     "graphql": "^14.4.2",
+    "mobx": "^6.5.0",
+    "mobx-react-lite": "^3.3.0",
+    "normalize.css": "^8.0.1",
     "react": "^16.8.6",
     "react-apollo": "^2.5.8",
     "react-dom": "^16.8.6",
+    "react-helmet": "^6.1.0",
     "react-scripts": "^3.4.1",
     "styled-components": "^4.3.2",
     "tachyons": "^4.11.1"
@@ -40,6 +48,12 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.0.1"
+    "@types/jest": "^27.4.1",
+    "@types/node": "^17.0.30",
+    "@types/react": "^18.0.8",
+    "@types/react-dom": "^18.0.3",
+    "@types/react-helmet": "^6.1.5",
+    "gh-pages": "^2.0.1",
+    "typescript": "^3.9.10"
   }
 }

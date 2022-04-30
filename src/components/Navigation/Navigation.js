@@ -1,9 +1,11 @@
-import React, { Component } from "react";
 import "./Navigation.css";
-import content from "../../config/content";
+
+import React, { Component } from "react";
 
 import imgBS from "../../assets/logo/logo-bs.png";
+import content from "../../config/content";
 import SlideIn from "../universal/SlideIn";
+
 // import imgYao from "../assets/logo/logo-yao.png";
 
 class Navigation extends Component {
@@ -12,7 +14,7 @@ class Navigation extends Component {
     this.burger = React.createRef();
     this.linksContainer = React.createRef();
     this.state = {
-      scrollDirection: "still"
+      scrollDirection: "still",
     };
   }
 
@@ -45,7 +47,7 @@ class Navigation extends Component {
     window.removeEventListener("resize", this.handleResize);
   }
 
-  handleScroll = scrollDirection => {
+  handleScroll = (scrollDirection) => {
     if (scrollDirection === "down") {
       return "top--20p";
     } else {
@@ -82,7 +84,7 @@ class Navigation extends Component {
     const { scrollDirection } = this.state;
     const { logo, tabs } = content.navigation;
     return (
-      <div
+      <nav
         className={`z-1 fixed nav-transition-top ${this.handleScroll(
           scrollDirection
         )}`}
@@ -99,7 +101,7 @@ class Navigation extends Component {
                 >
                   <a
                     href={logo.url}
-                    className="link dib no-underline dim-090 transition-ease-in"
+                    className="AppLogo link dib no-underline dim-090 transition-ease-in"
                   >
                     <img
                       src={imgBS}
@@ -147,7 +149,7 @@ class Navigation extends Component {
             </div>
           </div>
         </div>
-      </div>
+      </nav>
     );
   }
 }

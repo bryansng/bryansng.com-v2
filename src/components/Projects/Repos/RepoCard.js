@@ -9,17 +9,17 @@ const RepoCard = ({
   imgURL,
   position,
   startDelay,
-  showWithoutWaitForScroll = false
+  showWithoutWaitForScroll = false,
 }) => (
   <SlideIn
     percentageInViewport={0.05}
     isSegmentInViewport={showWithoutWaitForScroll}
     animationDelayValue={delayMultiplier(position, startDelay)}
   >
-    <div
+    <article
       className="ma1 br2 dt hide-child-l hide-child-m contain bg-center repo-card-img-bg transition-hide-partial transition-ease-in"
       style={{
-        backgroundImage: `url(${imgURL})`
+        backgroundImage: `url(${imgURL})`,
       }}
     >
       <span className="dtc v-mid white w-100 h-100 child-l child-m o-100-ns bg-black-40 transition-ease-in">
@@ -36,7 +36,7 @@ const RepoCard = ({
           </div>
         </div>
       </span>
-    </div>
+    </article>
   </SlideIn>
 );
 

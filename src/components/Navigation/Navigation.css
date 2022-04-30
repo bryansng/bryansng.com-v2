@@ -1,3 +1,10 @@
+.AppLogo {
+	transition: 1.12s;
+}
+.AppLogo:hover {
+	transform: scale(1.12);
+}
+
 .top--20p {
   top: -20%;
 }
@@ -90,7 +97,7 @@ NOTE:
 	right: 0;
 	width: 100vw;
 	height: 100vh;
-	
+
 	background-color: transparent;
 }
 

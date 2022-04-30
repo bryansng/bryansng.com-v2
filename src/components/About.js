@@ -29,21 +29,21 @@ class About extends React.Component {
 
     const { category_id_to_show } = this.state;
     return (
-      <div id="about">
+      <section id="about">
         <SlideIn>
           <PaddingResizer>
             <div className="w-60-l w-75 center tl">
-              <div className="pv3">
+              <header className="pv3">
                 <TabContent
                   index={componentOrder}
                   content={section_name}
                   isLink={false}
                 />
-              </div>
-              <div className="flex-l flex-row-l justify-between-l">
+              </header>
+              <article className="flex-l flex-row-l justify-between-l">
                 <div className="w-70-l">
                   {descs.map((desc, ind) => (
-                    <p key={ind} className="mt0 lh-title paragraph">
+                    <p key={ind} className="mt0 lh-copy paragraph">
                       {desc}
                     </p>
                   ))}
@@ -101,11 +101,11 @@ class About extends React.Component {
                     <div className="picture-shadow transition-ease-in br1"></div>
                   </div>
                 </div>
-              </div>
+              </article>
             </div>
           </PaddingResizer>
         </SlideIn>
-      </div>
+      </section>
     );
   }
 }

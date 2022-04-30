@@ -12,10 +12,10 @@ class Contact extends React.Component {
     const contact = content.contact;
     const { title, desc, button_msg } = contact;
     return (
-      <div id="contact">
+      <section id="contact">
         <SlideIn>
           <PaddingResizer>
-            <div className="w-40-l w-90 center tc slide-in-bottom">
+            <article className="w-40-l w-90 center tc slide-in-bottom">
               <TabContent
                 index={componentOrder}
                 content="Contact"
@@ -24,10 +24,10 @@ class Contact extends React.Component {
               <h2 className="f2 title">{title}</h2>
               <p className="pb4 paragraph lh-copy">{desc}</p>
               <MailTo isCenter={true} text={button_msg} />
-            </div>
+            </article>
           </PaddingResizer>
         </SlideIn>
-      </div>
+      </section>
     );
   }
 }

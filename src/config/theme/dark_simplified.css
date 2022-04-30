@@ -36,9 +36,11 @@ body {
 
 
 ::selection {
-	background: #999;
+	background: #569cd666;
 }
-
+::-moz-selection {
+	background: #569cd666;
+}
 
 /* TDL include shadow for nav */
 .nav-bg {

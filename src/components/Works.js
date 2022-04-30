@@ -11,11 +11,11 @@ class Works extends React.Component {
 
     const { employments } = content.works;
     this.state = {
-      employment_id_to_show: employments.length - 1
+      employment_id_to_show: employments.length - 1,
     };
   }
 
-  handleClick = array_ind => {
+  handleClick = (array_ind) => {
     this.setState({ employment_id_to_show: array_ind });
   };
 
@@ -25,18 +25,18 @@ class Works extends React.Component {
     const { section_name, employments } = content.works;
     const { employment_id_to_show } = this.state;
     return (
-      <div id="works">
+      <section id="works">
         <SlideIn>
           <PaddingResizer>
             <div className="w-50-l w-75 center tc">
-              <div className="pv3">
+              <header className="pv3">
                 <TabContent
                   index={componentOrder}
                   content={section_name}
                   isLink={false}
                 />
-              </div>
-              <div className="flex flex-row-l flex-column flex-nowrap justify-around tl">
+              </header>
+              <article className="flex flex-row-l flex-column flex-nowrap justify-around tl">
                 <div className="w-25-l pv0-l pt3 pb4">
                   <CompaniesName
                     employments={employments}
@@ -57,11 +57,11 @@ class Works extends React.Component {
                     </TransitionComponent>
                   ))}
                 </div>
-              </div>
+              </article>
             </div>
           </PaddingResizer>
         </SlideIn>
-      </div>
+      </section>
     );
   }
 }
@@ -70,7 +70,7 @@ class CompaniesName extends React.Component {
   render() {
     const { employments, employmentIDToShow, handleClick } = this.props;
     return (
-      <div className="flex flex-column-reverse-l flex-row-reverse justify-end content-end">
+      <div className="flex flex-wrap-ns flex-column-reverse-l flex-row-reverse justify-end content-end">
         {employments.map((employment, ind) => (
           <div
             key={ind}
@@ -127,7 +127,7 @@ const RoleCompany = ({ employment }) => {
 
 const DateOfService = ({ employment }) => {
   const start_date = createDate(employment.start_date);
-  const end_date = createDate(employment.end_date);
+  const end_date = employment.end_date ? createDate(employment.end_date) : null;
 
   const date_options = { year: "numeric", month: "short" };
   return (
@@ -140,7 +140,7 @@ const DateOfService = ({ employment }) => {
     </h4>
   );
 };
-const createDate = date_obj => {
+const createDate = (date_obj) => {
   return new Date(date_obj.year, date_obj.month);
 };
 
@@ -150,7 +150,7 @@ const EmploymentDesc = ({ employment }) => {
     <ul className="list pl0 tj">
       {job_desc.map((desc, ind) => (
         <li key={ind} className="pl4 pb2 better-list-style paragraph">
-          {desc}
+          <p className="ma0 lh-copy">{desc}</p>
         </li>
       ))}
     </ul>

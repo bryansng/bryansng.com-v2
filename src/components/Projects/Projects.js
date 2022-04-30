@@ -10,22 +10,22 @@ export default class Projects extends React.Component {
     const { componentOrder } = this.props;
     const { section_name } = content.projects;
     return (
-      <div id="projects">
+      <section id="projects">
         <SlideIn>
           <PaddingResizer>
             <div className="w-40-xxxl w-50-xxl w-60-xl w-70-l-mine w-90-m w-90-ns center tc">
-              <div className="pv3">
+              <header className="pv3">
                 <TabContent
                   index={componentOrder}
                   content={section_name}
                   isLink={false}
                 />
-              </div>
+              </header>
               <Repos />
             </div>
           </PaddingResizer>
         </SlideIn>
-      </div>
+      </section>
     );
   }
 }

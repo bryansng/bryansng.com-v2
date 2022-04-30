@@ -6,7 +6,7 @@ const Footer = () => {
   // const currentYear = new Date().getFullYear();
   const { github_link_msg, github_link_url, last_updated } = content.footer;
   return (
-    <div className="footer-bg shadow-2">
+    <footer className="footer-bg shadow-2">
       <SocialMedia />
       <div className="tc ma0 pt2 pb4 pv4-l font-ubuntu-mono">
         <a
@@ -19,7 +19,7 @@ const Footer = () => {
           Last Updated: {last_updated}
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 
