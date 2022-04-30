@@ -33,6 +33,10 @@ const makeSEOConfig = () => {
           content: "profile",
         },
         {
+          property: "og:description",
+          content: "Bryan Sng is a Software Engineer based in Dublin, Ireland who specializes in building exceptional websites, web applications, software applications, and loves utilizing his VSCode shortcuts.",
+        },
+        {
           property: "profile:first_name",
           content: "Bryan",
         },
