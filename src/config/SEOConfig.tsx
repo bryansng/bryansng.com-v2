@@ -34,11 +34,11 @@ const makeSEOConfig = () => {
         },
         {
           property: "profile:first_name",
-          content: "profile",
+          content: "Bryan",
         },
         {
           property: "profile:last_name",
-          content: "profile",
+          content: "Sng",
         },
         {
           property: "profile:username",
@@ -71,7 +71,7 @@ const makeSEOConfig = () => {
         {
           property: "og:image",
           content:
-            "https://www.bryansng.com/static/media/me-500x500.9f8c7eb1.,png",
+            "https://www.bryansng.com/static/media/me-500x500.9f8c7eb1.png",
         },
         {
           property: "og:image",
