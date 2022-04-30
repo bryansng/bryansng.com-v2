@@ -30,7 +30,7 @@ const makeSEOConfig = () => {
         },
         {
           property: "og:type",
-          content: "profile",
+          content: "website",
         },
         {
           property: "og:description",
@@ -47,10 +47,6 @@ const makeSEOConfig = () => {
         {
           property: "profile:username",
           content: "bryansng",
-        },
-        {
-          property: "profile:gender",
-          content: "male",
         },
         {
           property: "og:locale",
@@ -77,10 +73,10 @@ const makeSEOConfig = () => {
           content:
             "https://www.bryansng.com/static/media/me-500x500.9f8c7eb1.png",
         },
-        {
-          property: "og:image",
-          content: "https://www.bryansng.com/static/media/logo-bs.7740c5a9.png",
-        },
+        // {
+        //   property: "og:image",
+        //   content: "https://www.bryansng.com/static/media/logo-bs.7740c5a9.png",
+        // },
         {
           property: "og:image:alt",
           content: "Bryan Sng | Software Engineer",

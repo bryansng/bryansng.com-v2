@@ -3,10 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@linaria/babel-preset": "^3.0.0-beta.15",
-    "@linaria/core": "^3.0.0-beta.15",
-    "@linaria/react": "^3.0.0-beta.15",
-    "@linaria/shaker": "^3.0.0-beta.15",
     "apollo-boost": "^0.4.3",
     "apollo-cache-inmemory": "^1.6.2",
     "apollo-client": "^2.6.3",
@@ -15,7 +11,6 @@
     "graphql": "^14.4.2",
     "mobx": "^6.5.0",
     "mobx-react-lite": "^3.3.0",
-    "normalize.css": "^8.0.1",
     "react": "^16.8.6",
     "react-apollo": "^2.5.8",
     "react-dom": "^16.8.6",
