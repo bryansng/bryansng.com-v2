@@ -3,21 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "apollo-boost": "^0.4.3",
-    "apollo-cache-inmemory": "^1.6.2",
-    "apollo-client": "^2.6.3",
-    "apollo-link-context": "^1.0.18",
-    "apollo-link-http": "^1.5.15",
-    "graphql": "^14.4.2",
+    "apollo-boost": "^0.4.9",
+    "apollo-cache-inmemory": "^1.6.6",
+    "apollo-client": "^2.6.10",
+    "apollo-link-context": "^1.0.20",
+    "apollo-link-http": "^1.5.17",
+    "graphql": "^14.7.0",
     "mobx": "^6.5.0",
     "mobx-react-lite": "^3.3.0",
-    "react": "^16.8.6",
+    "react": "^16.14.0",
     "react-apollo": "^2.5.8",
-    "react-dom": "^16.8.6",
+    "react-dom": "^16.14.0",
     "react-helmet": "^6.1.0",
-    "react-scripts": "^3.4.1",
-    "styled-components": "^4.3.2",
-    "tachyons": "^4.11.1"
+    "react-scripts": "^3.4.4",
+    "styled-components": "^4.4.1",
+    "tachyons": "^4.12.0"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -48,7 +48,7 @@
     "@types/react": "^18.0.8",
     "@types/react-dom": "^18.0.3",
     "@types/react-helmet": "^6.1.5",
-    "gh-pages": "^2.0.1",
+    "gh-pages": "^2.2.0",
     "typescript": "^3.9.10"
   }
 }
