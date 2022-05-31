@@ -9,7 +9,7 @@
     "apollo-link-context": "^1.0.20",
     "apollo-link-http": "^1.5.17",
     "graphql": "^14.7.0",
-    "mobx": "^6.5.0",
+    "mobx": "^6.6.0",
     "mobx-react-lite": "^3.4.0",
     "react": "^16.14.0",
     "react-apollo": "^2.5.8",
