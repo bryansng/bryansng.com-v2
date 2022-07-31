@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 export default class SlideIn extends Component {
   constructor(props) {
@@ -44,7 +44,7 @@ export default class SlideIn extends Component {
 
   // If segment in view, change animation-play-state to running.
   handleScroll = e => {
-    e.preventDefault();
+    if (!!e) e.preventDefault();
     if (this.isScrolledIntoView()) {
       this.setState({ isSegmentInViewport: true });
       window.removeEventListener("scroll", this.handleScroll);
@@ -52,6 +52,7 @@ export default class SlideIn extends Component {
   };
 
   componentDidMount() {
+    this.handleScroll();
     window.addEventListener("scroll", this.handleScroll);
   }
 

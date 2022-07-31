@@ -1,18 +1,20 @@
-import React from "react";
-import content from "./config/content";
+import './App.css';
+import './config/theme/dark_simplified.css';
+import 'tachyons';
+
+import React from 'react';
+
+import About from './components/About';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import Intro from './components/Intro';
+import LogoIntro from './components/LogoIntro/LogoIntro';
+import Navigation from './components/Navigation/Navigation';
+import Projects from './components/Projects/Projects';
+import SEO from './components/SEO/SEO';
+import content from './config/content';
+
 // import "normalize.css";
-import "tachyons";
-import "./App.css";
-import "./config/theme/dark_simplified.css";
-import LogoIntro from "./components/LogoIntro/LogoIntro";
-import Navigation from "./components/Navigation/Navigation";
-import Intro from "./components/Intro";
-import About from "./components/About";
-import Projects from "./components/Projects/Projects";
-import Works from "./components/Works";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import SEO from "./components/SEO/SEO";
 const { settings } = content;
 
 class App extends React.Component {
@@ -33,14 +35,14 @@ class App extends React.Component {
       intro: 0,
       about: 1,
       projects: 2,
-      works: 3,
-      contact: 4,
+      // works: 3,
+      contact: 3,
     };
     const components = {
       intro: <Intro />,
       about: <About />,
       projects: <Projects />,
-      works: <Works />,
+      // works: <Works />,
       contact: <Contact />,
     };
 

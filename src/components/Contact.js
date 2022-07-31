@@ -1,9 +1,10 @@
-import React from "react";
-import MailTo from "./MailTo";
-import content from "../config/content";
-import { TabContent } from "./Navigation/Navigation";
-import SlideIn from "./universal/SlideIn";
-import PaddingResizer from "./universal/PaddingResizer";
+import React from 'react';
+
+import content from '../config/content.json';
+import MailTo from './MailTo';
+import { TabContent } from './Navigation/Navigation';
+import PaddingResizer from './universal/PaddingResizer';
+import SlideIn from './universal/SlideIn';
 
 class Contact extends React.Component {
   render() {

@@ -1,7 +1,9 @@
-import React from "react";
-import SlideIn from "../../universal/SlideIn";
-import { GitHub, ExternalLinkSymbol } from "../../SocialMedia/Logos";
-import content from "../../../config/content";
+import React from 'react';
+
+import content from '../../../config/content';
+import { ExternalLinkSymbol, GitHub } from '../../SocialMedia/Logos';
+import SlideIn from '../../universal/SlideIn';
+
 const { projects } = content;
 
 const RepoCard = ({

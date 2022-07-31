@@ -1,20 +1,18 @@
-import React from "react";
-import Button from "./Button";
-import SlideIn from "../../universal/SlideIn";
-import content from "../../../config/content";
-import RepoCard, { delayMultiplier } from "./RepoCard";
-import {
-  pinnedReposQueryString,
-  reposQueryString,
-  replaceDashAndDots
-} from "./BuildQueryStrings";
-import { gql } from "apollo-boost";
-import { Query, ApolloProvider } from "react-apollo";
-import { ApolloClient } from "apollo-client";
-import { createHttpLink } from "apollo-link-http";
-import { setContext } from "apollo-link-context";
-import { InMemoryCache } from "apollo-cache-inmemory";
-import styled from "styled-components";
+import { gql } from 'apollo-boost';
+import { InMemoryCache } from 'apollo-cache-inmemory';
+import { ApolloClient } from 'apollo-client';
+import { setContext } from 'apollo-link-context';
+import { createHttpLink } from 'apollo-link-http';
+import React from 'react';
+import { ApolloProvider, Query } from 'react-apollo';
+import styled from 'styled-components';
+
+import content from '../../../config/content';
+import SlideIn from '../../universal/SlideIn';
+import { pinnedReposQueryString, replaceDashAndDots, reposQueryString } from './BuildQueryStrings';
+import Button from './Button';
+import RepoCard, { delayMultiplier } from './RepoCard';
+
 const { projects } = content;
 
 const RepoCardContainer = styled.div.attrs({
@@ -81,7 +79,7 @@ export default class Repos extends React.Component {
                 </RepoCardContainer>
                 {!showMoreRepos ? (
                   <SlideIn
-                    percentageInViewport={0.0}
+                    percentageInViewport={-10}
                     animationDelayValue={delayMultiplier(
                       projects.delays.more_button.position,
                       projects.delays.pinned_repo_cards.start_delay
@@ -116,6 +114,7 @@ const GitHubPinnedRepos = (apiData, githubUsername) => {
         imgURL={imgURL}
         position={ind}
         startDelay={projects.delays.pinned_repo_cards.start_delay}
+        showWithoutWaitForScroll={true}
       />
     );
   });
