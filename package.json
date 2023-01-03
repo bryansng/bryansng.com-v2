@@ -15,7 +15,7 @@
     "react-apollo": "^2.5.8",
     "react-dom": "^16.14.0",
     "react-helmet": "^6.1.0",
-    "react-scripts": "^3.4.4",
+    "react-scripts": "^5.0.1",
     "styled-components": "^4.4.1",
     "tachyons": "^4.12.0"
   },
