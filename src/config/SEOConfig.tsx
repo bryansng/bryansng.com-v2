@@ -6,7 +6,7 @@ const makeSEOConfig = () => {
       return [
         {
           name: "robots",
-          content: "index, follow",
+          content: "index, follow, noarchive",
         },
         {
           charSet: "utf-8",
@@ -19,7 +19,7 @@ const makeSEOConfig = () => {
         {
           property: "image",
           content:
-            "https://www.bryansng.com/static/media/me-500x500.9f8c7eb1.png",
+            "https://v2.bryansng.com/static/media/me-500x500.9f8c7eb1.png",
         },
         {
           name: "keywords",
@@ -51,16 +51,16 @@ const makeSEOConfig = () => {
         },
         {
           property: "og:url",
-          content: "https://www.bryansng.com/",
+          content: "https://v2.bryansng.com/",
         },
         {
           property: "og:image",
           content:
-            "https://www.bryansng.com/static/media/me-500x500.9f8c7eb1.png",
+            "https://v2.bryansng.com/static/media/me-500x500.9f8c7eb1.png",
         },
         {
           property: "og:image",
-          content: "https://www.bryansng.com/static/media/logo-bs.7740c5a9.png",
+          content: "https://v2.bryansng.com/static/media/logo-bs.7740c5a9.png",
         },
         {
           property: "og:image:alt",
